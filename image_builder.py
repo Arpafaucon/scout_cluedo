@@ -42,8 +42,13 @@ ID_SIZE_RT = Size(0.1, 0.08)
 
 # Depends on text
 DEPON_SIZE = int(0.08*DPI)
-DEPON_CENTER_RT = Size(0.5, 0.95)
-DEPON_SIZE_RT = Size(0.9, 0.05)
+DEPON_CENTER_RT = Size(0.25, 0.95)
+DEPON_SIZE_RT = Size(0.5, 0.05)
+
+# Required for text
+REQFOR_SIZE = int(0.08*DPI)
+REQFOR_CENTER_RT = Size(0.75, 0.95)
+REQFOR_SIZE_RT = Size(0.5, 0.05)
 
 
 # coordinates of the image, in percent of the view
@@ -118,6 +123,14 @@ def build_card(card: Card) -> Image:
     depon_text_size = Size(id_font.getsize(requires_text))
     depon_xy = topleft_from_center(DEPON_CENTER_RT*IMG_SIZE_PX, depon_text_size)
     draw.text(depon_xy.tuple_int(), requires_text, font=id_font, fill="black")
+    LOGGER.info("drawn depends-on")
+
+    # Requires
+    ################
+    reqfor_text = "donne accès à: " + ",".join(map(format_id, card.required_for))
+    reqfor_text_size = Size(id_font.getsize(reqfor_text))
+    reqfor_xy = topleft_from_center(REQFOR_CENTER_RT*IMG_SIZE_PX, reqfor_text_size)
+    draw.text(reqfor_xy.tuple_int(), reqfor_text, font=id_font, fill="green")
     LOGGER.info("drawn depends-on")
 
     # description
