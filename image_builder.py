@@ -5,6 +5,7 @@ from size import Size
 from PIL.Image import Image
 from pathlib import Path
 import PIL.Image, PIL.ImageDraw, PIL.ImageFont, PIL.ImageShow
+import textwrap
 
 import typing_extensions as tp_ext
 import typing as tp
@@ -32,21 +33,21 @@ IMG_SIZE_PX = IMG_SIZE_MM * MM_TO_PX
 LOGGER.info("Card size: %s", IMG_SIZE_PX)
 
 # Title text
-TITLE_SIZE = int(0.16*DPI)
+TITLE_SIZE = int(0.16 * DPI)
 TITLE_CENTER_RT = Size(0.5, 0.07)
 
 # ID text
-ID_SIZE = int(0.08*DPI)
+ID_SIZE = int(0.08 * DPI)
 ID_CENTER_RT = Size(0.9, 0.05)
 ID_SIZE_RT = Size(0.1, 0.08)
 
 # Depends on text
-DEPON_SIZE = int(0.08*DPI)
+DEPON_SIZE = int(0.08 * DPI)
 DEPON_CENTER_RT = Size(0.25, 0.95)
 DEPON_SIZE_RT = Size(0.5, 0.05)
 
 # Required for text
-REQFOR_SIZE = int(0.08*DPI)
+REQFOR_SIZE = int(0.08 * DPI)
 REQFOR_CENTER_RT = Size(0.75, 0.95)
 REQFOR_SIZE_RT = Size(0.5, 0.05)
 
@@ -58,9 +59,10 @@ IMG_WIDTH_PC = 80
 IMG_HEIGHT_PC = 30
 
 # coordinates of the description view, as a ratio
-DESCRIPTION_TEXT_SIZE = int(0.1*DPI)
+DESCRIPTION_TEXT_SIZE = int(0.1 * DPI)
 DESCRIPTION_SIZE_RT = Size(0.8, 0.4)
 DESCRIPTION_CENTER_RT = Size(0.5, 0.7)
+DESCRIPTION_WIDTH_CHARS = 30
 
 
 # Size: tp_ext.TypeAlias = tp.Tuple[float, float] # Width, height
@@ -88,9 +90,18 @@ def topleft_from_center(center: Size, rectangle: Size) -> Size:
 assert topleft_from_center(Size(5, 5), Size(10, 10)) == Size(0, 0)
 assert topleft_from_center(Size(5, 5), Size(8, 4)) == Size(1, 3)
 
-def format_id(i:str) -> str:
+
+def format_id(i: str) -> str:
     return f"#{i}#"
 
+def get_url(card: Card) -> str:
+    if card.url:
+        return card.url
+    else:
+        if card.type == "statement":
+            return "speech.png"
+        else:
+            return "fingerprint.png"
 
 def build_card(card: Card) -> Image:
     # main_image = PIL.Image.new(
@@ -103,9 +114,10 @@ def build_card(card: Card) -> Image:
     # title
     ################
     title_font = PIL.ImageFont.truetype("fonts/topsecretstamp.ttf", size=TITLE_SIZE)
-    title_text_size = Size(title_font.getsize(card.label))
-    title_xy = topleft_from_center(TITLE_CENTER_RT*IMG_SIZE_PX, title_text_size)
-    draw.text(title_xy.tuple_int(), card.label, font=title_font, fill="black")
+    title_text = card.pretty_type().upper()
+    title_text_size = Size(title_font.getsize(title_text))
+    title_xy = topleft_from_center(TITLE_CENTER_RT * IMG_SIZE_PX, title_text_size)
+    draw.text(title_xy.tuple_int(), title_text, font=title_font, fill="black")
     LOGGER.info("drawn text")
 
     # ID
@@ -113,7 +125,7 @@ def build_card(card: Card) -> Image:
     id_font = PIL.ImageFont.truetype("fonts/topsecretstamp.ttf", size=ID_SIZE)
     id_text = format_id(card.id)
     id_text_size = Size(id_font.getsize(id_text))
-    id_xy = topleft_from_center(ID_CENTER_RT*IMG_SIZE_PX, id_text_size)
+    id_xy = topleft_from_center(ID_CENTER_RT * IMG_SIZE_PX, id_text_size)
     draw.text(id_xy.tuple_int(), id_text, font=id_font, fill="black")
     LOGGER.info("drawn ID")
 
@@ -121,7 +133,7 @@ def build_card(card: Card) -> Image:
     ################
     requires_text = "requiert: " + ",".join(map(format_id, card.depends_on))
     depon_text_size = Size(id_font.getsize(requires_text))
-    depon_xy = topleft_from_center(DEPON_CENTER_RT*IMG_SIZE_PX, depon_text_size)
+    depon_xy = topleft_from_center(DEPON_CENTER_RT * IMG_SIZE_PX, depon_text_size)
     draw.text(depon_xy.tuple_int(), requires_text, font=id_font, fill="black")
     LOGGER.info("drawn depends-on")
 
@@ -129,31 +141,39 @@ def build_card(card: Card) -> Image:
     ################
     reqfor_text = "donne accès à: " + ",".join(map(format_id, card.required_for))
     reqfor_text_size = Size(id_font.getsize(reqfor_text))
-    reqfor_xy = topleft_from_center(REQFOR_CENTER_RT*IMG_SIZE_PX, reqfor_text_size)
+    reqfor_xy = topleft_from_center(REQFOR_CENTER_RT * IMG_SIZE_PX, reqfor_text_size)
     draw.text(reqfor_xy.tuple_int(), reqfor_text, font=id_font, fill="green")
     LOGGER.info("drawn depends-on")
 
     # description
     ################
     description_font = title_font
-    description_text_size = Size(description_font.getsize(card.description))
-    description_xy = topleft_from_center(DESCRIPTION_CENTER_RT, DESCRIPTION_SIZE_RT) * IMG_SIZE_PX
-    draw.multiline_text(description_xy.tuple_int(), card.description, font=description_font, fill="black")
-
+    description_text = "\n".join(
+        textwrap.wrap(
+            card.description,
+            width=DESCRIPTION_WIDTH_CHARS,
+            initial_indent="",
+            subsequent_indent="",
+        )
+    )
+    description_text_size = Size(description_font.getsize(description_text))
+    description_xy = (
+        topleft_from_center(DESCRIPTION_CENTER_RT, DESCRIPTION_SIZE_RT) * IMG_SIZE_PX
+    )
+    draw.multiline_text(
+        description_xy.tuple_int(),
+        description_text,
+        font=description_font,
+        fill="black",
+    )
 
     # Illustration
     ################
     # compute image box size
-    template_img_size = (
-        Size(IMG_WIDTH_PC, IMG_HEIGHT_PC) * 1e-2 * IMG_SIZE_PX
-    )
-    template_img_center = (
-        Size(IMG_CENTER_X_PC, IMG_CENTER_Y_PC) * 1e-2 * IMG_SIZE_PX
-    )
+    template_img_size = Size(IMG_WIDTH_PC, IMG_HEIGHT_PC) * 1e-2 * IMG_SIZE_PX
+    template_img_center = Size(IMG_CENTER_X_PC, IMG_CENTER_Y_PC) * 1e-2 * IMG_SIZE_PX
 
-    image_url = card.url
-    if not image_url:
-        image_url = "fingerprint.png"
+    image_url = get_url(card)
     illustration_raw = PIL.Image.open(Path("images") / image_url).convert("RGBA")
     illustration_raw_size_wh = Size(illustration_raw.size)
     LOGGER.info("Initial illustration size:  %s", illustration_raw_size_wh)
@@ -184,9 +204,9 @@ dest_folder.mkdir(parents=True)
 
 for i, (card_id, card) in enumerate(clu.cards.items()):
     im = build_card(card)
-    im.save(dest_folder/f"{card_id}.png")
-    # if i > 10:
-    #     break
+    im.save(dest_folder / f"{card_id}.png")
+    if i > 18 and False:
+        break
 
 # any_card = clu.cards["n2"]
 # PIL.ImageShow.register(PIL.ImageShow.EogViewer, -1)

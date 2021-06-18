@@ -66,57 +66,58 @@
 			<yjs:SolidColorFill x:Key="12" color="DarkOrange"/>
 			<yjs:Font x:Key="13" fontSize="12" fontFamily="'Arial'"/>
 			<y:ExteriorLabelModel x:Key="14" Insets="5"/>
-			<y:CompositeLabelModelParameter x:Key="15">
+			<y:ExteriorLabelModel x:Key="15" Insets="5"/>
+			<y:CompositeLabelModelParameter x:Key="16">
 				<y:CompositeLabelModelParameter.Parameter>
-					<y:ExteriorLabelModelParameter Position="South" Model="{y:GraphMLReference 14}"/>
+					<y:ExteriorLabelModelParameter Position="South" Model="{y:GraphMLReference 15}"/>
 				</y:CompositeLabelModelParameter.Parameter>
 				<y:CompositeLabelModelParameter.Model>
 					<y:CompositeLabelModel>
 						<y:CompositeLabelModel.LabelModels>
-							<y:GraphMLReference ResourceKey="14"/>
+							<y:GraphMLReference ResourceKey="15"/>
 							<y:InteriorLabelModel/>
 							<y:FreeNodeLabelModel/>
 						</y:CompositeLabelModel.LabelModels>
 					</y:CompositeLabelModel>
 				</y:CompositeLabelModelParameter.Model>
 			</y:CompositeLabelModelParameter>
-			<y:ExteriorLabelModel x:Key="16" Insets="5"/>
-			<y:CompositeLabelModelParameter x:Key="17">
+			<y:ExteriorLabelModel x:Key="17" Insets="5"/>
+			<y:CompositeLabelModelParameter x:Key="18">
 				<y:CompositeLabelModelParameter.Parameter>
-					<y:ExteriorLabelModelParameter Position="South" Model="{y:GraphMLReference 16}"/>
+					<y:ExteriorLabelModelParameter Position="South" Model="{y:GraphMLReference 17}"/>
 				</y:CompositeLabelModelParameter.Parameter>
 				<y:CompositeLabelModelParameter.Model>
 					<y:CompositeLabelModel>
 						<y:CompositeLabelModel.LabelModels>
-							<y:GraphMLReference ResourceKey="16"/>
+							<y:GraphMLReference ResourceKey="17"/>
 							<y:InteriorLabelModel/>
 							<y:FreeNodeLabelModel/>
 						</y:CompositeLabelModel.LabelModels>
 					</y:CompositeLabelModel>
 				</y:CompositeLabelModelParameter.Model>
 			</y:CompositeLabelModelParameter>
-			<yjs:Stroke x:Key="18" fill="WHITE" miterLimit="1.45"/>
-			<yjs:Arrow x:Key="19" stroke="#FFFFFFFF" fill="WHITE"/>
-			<yjs:Arrow x:Key="20" type="NONE"/>
-			<yjs:PolylineEdgeStyle x:Key="21" stroke="{y:GraphMLReference 18}" smoothingLength="20" targetArrow="{y:GraphMLReference 19}" sourceArrow="{y:GraphMLReference 20}"/>
-			<yjs:DashStyle x:Key="22" dashes="0 2" offset="0"/>
-			<yjs:SolidColorFill x:Key="23" color="#FFB71C1C"/>
-			<yjs:Arrow x:Key="24" stroke="#FFB71C1C" fill="#FFB71C1C"/>
-			<yjs:Arrow x:Key="25" type="NONE" stroke="#FFB71C1C" fill="#FFB71C1C"/>
-			<yjs:PolylineEdgeStyle x:Key="26" stroke="{y:GraphMLReference 18}" smoothingLength="20" targetArrow="{y:GraphMLReference 19}" sourceArrow="{y:GraphMLReference 20}"/>
-			<yjs:PolylineEdgeStyle x:Key="27" stroke="{y:GraphMLReference 34}" smoothingLength="20" targetArrow="{y:GraphMLReference 24}" sourceArrow="{y:GraphMLReference 25}"/>
-			<yjs:PolylineEdgeStyle x:Key="28" stroke="{y:GraphMLReference 18}" smoothingLength="20" targetArrow="{y:GraphMLReference 19}" sourceArrow="{y:GraphMLReference 20}"/>
-			<yjs:Stroke x:Key="29" fill="#FFB71C1C" lineCap="SQUARE" dashStyle="{y:GraphMLReference 22}" miterLimit="1.45"/>
-			<yjs:Arrow x:Key="30" stroke="#FFB71C1C" fill="#FFB71C1C"/>
-			<yjs:Arrow x:Key="31" type="NONE" stroke="#FFB71C1C" fill="#FFB71C1C"/>
-			<yjs:PolylineEdgeStyle x:Key="32" stroke="{y:GraphMLReference 18}" smoothingLength="20" targetArrow="{y:GraphMLReference 19}" sourceArrow="{y:GraphMLReference 20}"/>
-			<yjs:PolylineEdgeStyle x:Key="33" stroke="{y:GraphMLReference 18}" smoothingLength="20" targetArrow="{y:GraphMLReference 19}" sourceArrow="{y:GraphMLReference 20}"/>
-			<yjs:Stroke x:Key="34" fill="{y:GraphMLReference 23}" miterLimit="1.45"/>
-			<yjs:PolylineEdgeStyle x:Key="35" stroke="{y:GraphMLReference 34}" smoothingLength="20" targetArrow="{y:GraphMLReference 24}" sourceArrow="{y:GraphMLReference 25}"/>
-			<yjs:Stroke x:Key="36" fill="#FFB71C1C" lineCap="SQUARE" dashStyle="{y:GraphMLReference 22}" miterLimit="1.45"/>
-			<yjs:Arrow x:Key="37" stroke="#FFB71C1C" fill="#FFB71C1C"/>
-			<yjs:Arrow x:Key="38" type="NONE" stroke="#FFB71C1C" fill="#FFB71C1C"/>
-			<yjs:PolylineEdgeStyle x:Key="39" stroke="{y:GraphMLReference 18}" smoothingLength="20" targetArrow="{y:GraphMLReference 19}" sourceArrow="{y:GraphMLReference 20}"/>
+			<yjs:Stroke x:Key="19" fill="WHITE" miterLimit="1.45"/>
+			<yjs:Arrow x:Key="20" stroke="#FFFFFFFF" fill="WHITE"/>
+			<yjs:Arrow x:Key="21" type="NONE"/>
+			<yjs:PolylineEdgeStyle x:Key="22" stroke="{y:GraphMLReference 19}" smoothingLength="20" targetArrow="{y:GraphMLReference 20}" sourceArrow="{y:GraphMLReference 21}"/>
+			<yjs:DashStyle x:Key="23" dashes="0 2" offset="0"/>
+			<yjs:SolidColorFill x:Key="24" color="#FFB71C1C"/>
+			<yjs:Arrow x:Key="25" stroke="#FFB71C1C" fill="#FFB71C1C"/>
+			<yjs:Arrow x:Key="26" type="NONE" stroke="#FFB71C1C" fill="#FFB71C1C"/>
+			<yjs:PolylineEdgeStyle x:Key="27" stroke="{y:GraphMLReference 19}" smoothingLength="20" targetArrow="{y:GraphMLReference 20}" sourceArrow="{y:GraphMLReference 21}"/>
+			<yjs:PolylineEdgeStyle x:Key="28" stroke="{y:GraphMLReference 35}" smoothingLength="20" targetArrow="{y:GraphMLReference 25}" sourceArrow="{y:GraphMLReference 26}"/>
+			<yjs:PolylineEdgeStyle x:Key="29" stroke="{y:GraphMLReference 19}" smoothingLength="20" targetArrow="{y:GraphMLReference 20}" sourceArrow="{y:GraphMLReference 21}"/>
+			<yjs:Stroke x:Key="30" fill="#FFB71C1C" lineCap="SQUARE" dashStyle="{y:GraphMLReference 23}" miterLimit="1.45"/>
+			<yjs:Arrow x:Key="31" stroke="#FFB71C1C" fill="#FFB71C1C"/>
+			<yjs:Arrow x:Key="32" type="NONE" stroke="#FFB71C1C" fill="#FFB71C1C"/>
+			<yjs:PolylineEdgeStyle x:Key="33" stroke="{y:GraphMLReference 19}" smoothingLength="20" targetArrow="{y:GraphMLReference 20}" sourceArrow="{y:GraphMLReference 21}"/>
+			<yjs:PolylineEdgeStyle x:Key="34" stroke="{y:GraphMLReference 19}" smoothingLength="20" targetArrow="{y:GraphMLReference 20}" sourceArrow="{y:GraphMLReference 21}"/>
+			<yjs:Stroke x:Key="35" fill="{y:GraphMLReference 24}" miterLimit="1.45"/>
+			<yjs:PolylineEdgeStyle x:Key="36" stroke="{y:GraphMLReference 35}" smoothingLength="20" targetArrow="{y:GraphMLReference 25}" sourceArrow="{y:GraphMLReference 26}"/>
+			<yjs:Stroke x:Key="37" fill="#FFB71C1C" lineCap="SQUARE" dashStyle="{y:GraphMLReference 23}" miterLimit="1.45"/>
+			<yjs:Arrow x:Key="38" stroke="#FFB71C1C" fill="#FFB71C1C"/>
+			<yjs:Arrow x:Key="39" type="NONE" stroke="#FFB71C1C" fill="#FFB71C1C"/>
+			<yjs:PolylineEdgeStyle x:Key="40" stroke="{y:GraphMLReference 19}" smoothingLength="20" targetArrow="{y:GraphMLReference 20}" sourceArrow="{y:GraphMLReference 21}"/>
 		</y:SharedData>
 	</data>
 	<graph id="G" edgedefault="directed">
@@ -238,6 +239,8 @@ une invitation pour se rendre à la soirée du 13 juin]]></data>
 		</node>
 		<node id="n4">
 			<data key="d0">24</data>
+			<data key="d3"><![CDATA[« A qui de droit:
+Par la présente, je vous prie de tout faire pour faciliter le travail des possesseurs de cette missive. Leur mission relève des intérêts supérieurs de la Nation.»]]></data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 6}" Style="{y:GraphMLReference 3}">
@@ -432,6 +435,7 @@ une invitation pour se rendre à la soirée du 13 juin]]></data>
 		</node>
 		<node id="n14">
 			<data key="d0">35</data>
+			<data key="d3"><![CDATA[Une photo dédicacée de l'Ambassadeur d'Italie, à l'époque où il était un jeune footballeur prodige]]></data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 6}" Style="{y:GraphMLReference 3}">
@@ -443,13 +447,15 @@ une invitation pour se rendre à la soirée du 13 juin]]></data>
 				<y:RectD X="960.2590063843443" Y="507.1537034003604" Width="30" Height="30"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 11}" fill="{y:GraphMLReference 12}" shape="TRIANGLE2"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 11}" fill="{y:GraphMLReference 12}" shape="STAR6"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1"/>
 		</node>
 		<node id="n15">
 			<data key="d0">36</data>
+			<data key="d3"><![CDATA[Ambassadeur d'Italie:
+« J'avvais un appel important à passer, je suis arrivé en retard à la cérémonie. Je suis entré dans le salon par la porte principale, autour de 21h.»]]></data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 6}" Style="{y:GraphMLReference 3}">
@@ -468,6 +474,8 @@ une invitation pour se rendre à la soirée du 13 juin]]></data>
 		</node>
 		<node id="n16">
 			<data key="d0">37</data>
+			<data key="d3"><![CDATA[Ambassadeur de Chine:
+« Vers 19h30, en attendant l'ouverture du gala, j'ai emprunté un cigare à l'ambassadeur d'Italie et je l'ai fumé avec lui.»]]></data>
 			<data key="d4">
 				<x:List>
 					<y:Label LayoutParameter="{y:GraphMLReference 6}">
@@ -621,11 +629,28 @@ une invitation pour se rendre à la soirée du 13 juin]]></data>
 		</node>
 		<node id="n24">
 			<data key="d0">45</data>
+			<data key="d3"><![CDATA[Ambassadeur d'Italie
+« Je me suis senti mal, et je suis allé en cuisine demandé un verre d'eau. »]]></data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 6}" Style="{y:GraphMLReference 3}">
-						<y:Label.Text><![CDATA[Je me sentais pas bien, je suis allé
-demander un verre d'eau aux cuisines]]></y:Label.Text>
+					<y:Label Style="{y:GraphMLReference 3}">
+						<y:Label.Text><![CDATA[Amb Italie: j'étais malade]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:CompositeLabelModelParameter>
+								<y:CompositeLabelModelParameter.Parameter>
+									<y:ExteriorLabelModelParameter Position="South" Model="{y:GraphMLReference 14}"/>
+								</y:CompositeLabelModelParameter.Parameter>
+								<y:CompositeLabelModelParameter.Model>
+									<y:CompositeLabelModel>
+										<y:CompositeLabelModel.LabelModels>
+											<y:GraphMLReference ResourceKey="14"/>
+											<y:InteriorLabelModel/>
+											<y:FreeNodeLabelModel/>
+										</y:CompositeLabelModel.LabelModels>
+									</y:CompositeLabelModel>
+								</y:CompositeLabelModelParameter.Model>
+							</y:CompositeLabelModelParameter>
+						</y:Label.LayoutParameter>
 					</y:Label>
 				</x:List>
 			</data>
@@ -641,7 +666,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d0">46</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 15}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 16}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Ambassadeur Nlle Zélande]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -657,9 +682,11 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 		</node>
 		<node id="n26">
 			<data key="d0">47</data>
+			<data key="d3"><![CDATA[Ambassadeur de Nouvelle Zélande
+« Un discours fascinant !  Vers 20h25, le ministre a porté un toast pour l'unité des nations, et tout le monde a renchéri !»]]></data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 15}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 16}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Apogée du discours à 20h25
 "Buvons à la belgique unie!"]]></y:Label.Text>
 					</y:Label>
@@ -675,9 +702,11 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 		</node>
 		<node id="n27">
 			<data key="d0">48</data>
+			<data key="d3"><![CDATA[Secrétaire du ministre:
+« Vers 20h40, le Ministre s'est senti mal. Il m'a demandé de l'accompagner dans sa chambre à l'étage pour se reposer. Allongé, il semblait aller mieux, alors je suis redescendu m'occuper des convives. »]]></data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 15}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 16}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[20h40 Ambassadeur se sent mal]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -694,7 +723,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d0">49</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Numéro téléphone]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -712,7 +741,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d0">50</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Adresse labo]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -730,7 +759,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d0">51</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Description du serveur: un chef pas déguisé]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -748,7 +777,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d0">52</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Ambassadeur très sympa s'est occupé de servir les verres de champagne]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -766,7 +795,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d0">53</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Ambassadeur Nlle Zélande]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -784,7 +813,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d0">54</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Empreintes Nlle Zélande]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -800,9 +829,11 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 		</node>
 		<node id="n34">
 			<data key="d0">55</data>
+			<data key="d3"><![CDATA[Enregistrement vidéo:
+on voit clairement Mme l'Ambassadeur de Nouvelle Zélande, et M. l'Ambassadeur du Brésil, franchir le perron de l'entrée à 20h02 précises. Ils semblent détendus.]]></data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Enregistrement vidéo: Brésil & Nlle Zélande arrivent à 20h02 par la porte principale]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -817,6 +848,8 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 		</node>
 		<node id="n35">
 			<data key="d0">56</data>
+			<data key="d3"><![CDATA[Ambassadeur Brésilien:
+« J'avais beaucoup discuté avec l'ambassadeur de Chine de l'organisation des JO. C'est un grand fan d'arts martiaux !»]]></data>
 			<data key="d5">
 				<y:RectD X="739" Y="114.875" Width="30" Height="30"/>
 			</data>
@@ -830,7 +863,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d0">57</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
 						<y:Label.Text><![CDATA[Ambassadeur Chinois]]></y:Label.Text>
 					</y:Label>
 				</x:List>
@@ -846,10 +879,11 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 		</node>
 		<node id="n37">
 			<data key="d0">58</data>
+			<data key="d3"><![CDATA[Photo de Jacky Chan, en posture de combat. Appartient à l'ambassadeur de Chine.]]></data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}" Style="{y:GraphMLReference 3}">
-						<y:Label.Text><![CDATA[Photo dédicacée de Jacky Chan]]></y:Label.Text>
+					<y:Label LayoutParameter="{y:GraphMLReference 18}" Style="{y:GraphMLReference 3}">
+						<y:Label.Text><![CDATA[Photo dédicacée]]></y:Label.Text>
 					</y:Label>
 				</x:List>
 			</data>
@@ -863,7 +897,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 		</node>
 		<edge id="e0" source="n1" target="n0" sourceport="p0" targetport="p0">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 18}" smoothingLength="20" targetArrow="{y:GraphMLReference 19}" sourceArrow="{y:GraphMLReference 20}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 19}" smoothingLength="20" targetArrow="{y:GraphMLReference 20}" sourceArrow="{y:GraphMLReference 21}"/>
 			</data>
 		</edge>
 		<edge id="e1" source="n0" target="n2" sourceport="p1" targetport="p0">
@@ -883,54 +917,54 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 		</edge>
 		<edge id="e2" source="n1" target="n3" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="21"/>
+				<y:GraphMLReference ResourceKey="22"/>
 			</data>
 		</edge>
 		<edge id="e3" source="n3" target="n4" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="21"/>
+				<y:GraphMLReference ResourceKey="22"/>
 			</data>
 		</edge>
 		<edge id="e4" source="n3" target="n5" sourceport="p2" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="21"/>
+				<y:GraphMLReference ResourceKey="22"/>
 			</data>
 		</edge>
 		<edge id="e5" source="n5" target="n6" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="21"/>
+				<y:GraphMLReference ResourceKey="22"/>
 			</data>
 		</edge>
 		<edge id="e6" source="n5" target="n7" sourceport="p2" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="21"/>
+				<y:GraphMLReference ResourceKey="22"/>
 			</data>
 		</edge>
 		<edge id="e7" source="n4" target="n8" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 36}" smoothingLength="20" targetArrow="{y:GraphMLReference 37}" sourceArrow="{y:GraphMLReference 38}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 37}" smoothingLength="20" targetArrow="{y:GraphMLReference 38}" sourceArrow="{y:GraphMLReference 39}"/>
 			</data>
 		</edge>
 		<edge id="e8" source="n4" target="n5" sourceport="p2" targetport="p3">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 29}" smoothingLength="20" targetArrow="{y:GraphMLReference 30}" sourceArrow="{y:GraphMLReference 31}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 30}" smoothingLength="20" targetArrow="{y:GraphMLReference 31}" sourceArrow="{y:GraphMLReference 32}"/>
 			</data>
 		</edge>
 		<edge id="e9" source="n1" target="n9" sourceport="p2" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="21"/>
+				<y:GraphMLReference ResourceKey="22"/>
 			</data>
 		</edge>
 		<edge id="e10" source="n10" target="n11" sourceport="p0" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="21"/>
+				<y:GraphMLReference ResourceKey="22"/>
 			</data>
 		</edge>
 		<edge id="e11" source="n7" target="n12" sourceport="p1" targetport="p0">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle smoothingLength="20">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FFB71C1C" lineCap="SQUARE" dashStyle="{y:GraphMLReference 22}" miterLimit="1.45"/>
+						<yjs:Stroke fill="#FFB71C1C" lineCap="SQUARE" dashStyle="{y:GraphMLReference 23}" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
 						<yjs:Arrow stroke="#FFB71C1C" fill="#FFB71C1C"/>
@@ -945,7 +979,7 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle smoothingLength="20">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FFB71C1C" lineCap="SQUARE" dashStyle="{y:GraphMLReference 22}" miterLimit="1.45"/>
+						<yjs:Stroke fill="#FFB71C1C" lineCap="SQUARE" dashStyle="{y:GraphMLReference 23}" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
 						<yjs:Arrow stroke="#FFB71C1C" fill="#FFB71C1C"/>
@@ -963,136 +997,136 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle smoothingLength="20" targetArrow="{y:GraphMLReference 24}" sourceArrow="{y:GraphMLReference 25}">
+				<yjs:PolylineEdgeStyle smoothingLength="20" targetArrow="{y:GraphMLReference 25}" sourceArrow="{y:GraphMLReference 26}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 23}" lineCap="SQUARE" dashStyle="{y:GraphMLReference 22}" miterLimit="1.45"/>
+						<yjs:Stroke fill="{y:GraphMLReference 24}" lineCap="SQUARE" dashStyle="{y:GraphMLReference 23}" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e14" source="n14" target="n12" sourceport="p0" targetport="p3">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="27"/>
+				<y:GraphMLReference ResourceKey="28"/>
 			</data>
 		</edge>
 		<edge id="e15" source="n20" target="n14" sourceport="p1" targetport="p1">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="26"/>
+				<y:GraphMLReference ResourceKey="27"/>
 			</data>
 		</edge>
 		<edge id="e16" source="n12" target="n13" sourceport="p4" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="26"/>
+				<y:GraphMLReference ResourceKey="27"/>
 			</data>
 		</edge>
 		<edge id="e17" source="n9" target="n15" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="27"/>
+				<y:GraphMLReference ResourceKey="28"/>
 			</data>
 		</edge>
 		<edge id="e18" source="n16" target="n17" sourceport="p0" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="28"/>
+				<y:GraphMLReference ResourceKey="29"/>
 			</data>
 		</edge>
 		<edge id="e19" source="n15" target="n17" sourceport="p1" targetport="p1">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="28"/>
+				<y:GraphMLReference ResourceKey="29"/>
 			</data>
 		</edge>
 		<edge id="e20" source="n1" target="n18" sourceport="p3" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="28"/>
+				<y:GraphMLReference ResourceKey="29"/>
 			</data>
 		</edge>
 		<edge id="e21" source="n18" target="n19" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="28"/>
+				<y:GraphMLReference ResourceKey="29"/>
 			</data>
 		</edge>
 		<edge id="e22" source="n19" target="n20" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="27"/>
+				<y:GraphMLReference ResourceKey="28"/>
 			</data>
 		</edge>
 		<edge id="e23" source="n6" target="n12" sourceport="p1" targetport="p5">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="27"/>
+				<y:GraphMLReference ResourceKey="28"/>
 			</data>
 		</edge>
 		<edge id="e24" source="n1" target="n21" sourceport="p4" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="26"/>
+				<y:GraphMLReference ResourceKey="27"/>
 			</data>
 		</edge>
 		<edge id="e25" source="n21" target="n22" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="28"/>
+				<y:GraphMLReference ResourceKey="29"/>
 			</data>
 		</edge>
 		<edge id="e26" source="n21" target="n23" sourceport="p2" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="26"/>
+				<y:GraphMLReference ResourceKey="27"/>
 			</data>
 		</edge>
 		<edge id="e27" source="n22" target="n23" sourceport="p1" targetport="p1">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 29}" smoothingLength="20" targetArrow="{y:GraphMLReference 30}" sourceArrow="{y:GraphMLReference 31}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 30}" smoothingLength="20" targetArrow="{y:GraphMLReference 31}" sourceArrow="{y:GraphMLReference 32}"/>
 			</data>
 		</edge>
 		<edge id="e28" source="n2" target="n23" sourceport="p2" targetport="p2">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="27"/>
+				<y:GraphMLReference ResourceKey="28"/>
 			</data>
 		</edge>
 		<edge id="e29" source="n17" target="n24" sourceport="p2" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="27"/>
+				<y:GraphMLReference ResourceKey="28"/>
 			</data>
 		</edge>
 		<edge id="e30" source="n1" target="n25" sourceport="p5" targetport="p0">
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 18}" smoothingLength="20" targetArrow="{y:GraphMLReference 19}" sourceArrow="{y:GraphMLReference 20}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 19}" smoothingLength="20" targetArrow="{y:GraphMLReference 20}" sourceArrow="{y:GraphMLReference 21}"/>
 			</data>
 		</edge>
 		<edge id="e31" source="n25" target="n26" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="32"/>
+				<y:GraphMLReference ResourceKey="33"/>
 			</data>
 		</edge>
 		<edge id="e32" source="n3" target="n27" sourceport="p3" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="32"/>
+				<y:GraphMLReference ResourceKey="33"/>
 			</data>
 		</edge>
 		<edge id="e33" source="n23" target="n16" sourceport="p3" targetport="p1">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="33"/>
+				<y:GraphMLReference ResourceKey="34"/>
 			</data>
 		</edge>
 		<edge id="e34" source="n18" target="n28" sourceport="p2" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="33"/>
+				<y:GraphMLReference ResourceKey="34"/>
 			</data>
 		</edge>
 		<edge id="e35" source="n28" target="n8" sourceport="p1" targetport="p1">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="35"/>
+				<y:GraphMLReference ResourceKey="36"/>
 			</data>
 		</edge>
 		<edge id="e36" source="n29" target="n12" sourceport="p0" targetport="p6">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="35"/>
+				<y:GraphMLReference ResourceKey="36"/>
 			</data>
 		</edge>
 		<edge id="e37" source="n8" target="n29" sourceport="p2" targetport="p1">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="33"/>
+				<y:GraphMLReference ResourceKey="34"/>
 			</data>
 		</edge>
 		<edge id="e38" source="n0" target="n30" sourceport="p2" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="39"/>
+				<y:GraphMLReference ResourceKey="40"/>
 			</data>
 		</edge>
 		<edge id="e39" source="n30" target="n10" sourceport="p1" targetport="p1">
@@ -1102,32 +1136,32 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 36}" smoothingLength="20" targetArrow="{y:GraphMLReference 37}" sourceArrow="{y:GraphMLReference 38}"/>
+				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 37}" smoothingLength="20" targetArrow="{y:GraphMLReference 38}" sourceArrow="{y:GraphMLReference 39}"/>
 			</data>
 		</edge>
 		<edge id="e40" source="n10" target="n31" sourceport="p2" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="33"/>
+				<y:GraphMLReference ResourceKey="34"/>
 			</data>
 		</edge>
 		<edge id="e41" source="n31" target="n32" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="35"/>
+				<y:GraphMLReference ResourceKey="36"/>
 			</data>
 		</edge>
 		<edge id="e42" source="n33" target="n12" sourceport="p0" targetport="p7">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="35"/>
+				<y:GraphMLReference ResourceKey="36"/>
 			</data>
 		</edge>
 		<edge id="e43" source="n32" target="n33" sourceport="p1" targetport="p1">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="39"/>
+				<y:GraphMLReference ResourceKey="40"/>
 			</data>
 		</edge>
 		<edge id="e44" source="n8" target="n34" sourceport="p3" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="39"/>
+				<y:GraphMLReference ResourceKey="40"/>
 			</data>
 		</edge>
 		<edge id="e45" source="n18" target="n35" sourceport="p3" targetport="p0">
@@ -1142,17 +1176,17 @@ demander un verre d'eau aux cuisines]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="33"/>
+				<y:GraphMLReference ResourceKey="34"/>
 			</data>
 		</edge>
 		<edge id="e46" source="n35" target="n36" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="35"/>
+				<y:GraphMLReference ResourceKey="36"/>
 			</data>
 		</edge>
 		<edge id="e47" source="n36" target="n37" sourceport="p1" targetport="p0">
 			<data key="d13">
-				<y:GraphMLReference ResourceKey="39"/>
+				<y:GraphMLReference ResourceKey="40"/>
 			</data>
 		</edge>
 	</graph>

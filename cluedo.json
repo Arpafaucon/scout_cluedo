@@ -22,12 +22,12 @@
       "url": "",
       "depends_on": [],
       "required_for": [
-        "n21",
         "n0",
-        "n9",
         "n18",
+        "n25",
         "n3",
-        "n25"
+        "n9",
+        "n21"
       ]
     },
     "n2": {
@@ -63,14 +63,14 @@
       "id": "n4",
       "type": "evidence",
       "label": "Lettre de recommandation",
-      "description": "",
+      "description": "\u00ab A qui de droit:\nPar la pr\u00e9sente, je vous prie de tout faire pour faciliter le travail des possesseurs de cette missive. Leur mission rel\u00e8ve des int\u00e9r\u00eats sup\u00e9rieurs de la Nation.\u00bb",
       "url": "",
       "depends_on": [
         "n3"
       ],
       "required_for": [
-        "n5",
-        "n8"
+        "n8",
+        "n5"
       ]
     },
     "n5": {
@@ -84,8 +84,8 @@
         "n4"
       ],
       "required_for": [
-        "n6",
-        "n7"
+        "n7",
+        "n6"
       ]
     },
     "n6": {
@@ -121,12 +121,12 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n4",
-        "n28"
+        "n28",
+        "n4"
       ],
       "required_for": [
-        "n34",
-        "n29"
+        "n29",
+        "n34"
       ]
     },
     "n9": {
@@ -176,13 +176,13 @@
       "description": "",
       "url": "",
       "depends_on": [
+        "n7",
+        "n33",
+        "n29",
         "n2",
         "n14",
-        "n11",
-        "n33",
         "n6",
-        "n7",
-        "n29"
+        "n11"
       ],
       "required_for": [
         "n13"
@@ -201,9 +201,9 @@
     },
     "n14": {
       "id": "n14",
-      "type": "fingerprint",
+      "type": "evidence",
       "label": "Photo d\u00e9dicac\u00e9e",
-      "description": "",
+      "description": "Une photo d\u00e9dicac\u00e9e de l'Ambassadeur d'Italie, \u00e0 l'\u00e9poque o\u00f9 il \u00e9tait un jeune footballeur prodige",
       "url": "",
       "depends_on": [
         "n20"
@@ -216,7 +216,7 @@
       "id": "n15",
       "type": "statement",
       "label": "Arriv\u00e9e par la porte principale, 21h",
-      "description": "",
+      "description": "Ambassadeur d'Italie:\n\u00ab J'avvais un appel important \u00e0 passer, je suis arriv\u00e9 en retard \u00e0 la c\u00e9r\u00e9monie. Je suis entr\u00e9 dans le salon par la porte principale, autour de 21h.\u00bb",
       "url": "",
       "depends_on": [
         "n9"
@@ -229,7 +229,7 @@
       "id": "n16",
       "type": "statement",
       "label": "Emprunt\u00e9 une cigarette \u00e0 l'ambassadeur d'Italie, en attendant l'ouverture, 19h30",
-      "description": "",
+      "description": "Ambassadeur de Chine:\n\u00ab Vers 19h30, en attendant l'ouverture du gala, j'ai emprunt\u00e9 un cigare \u00e0 l'ambassadeur d'Italie et je l'ai fum\u00e9 avec lui.\u00bb",
       "url": "",
       "depends_on": [
         "n23"
@@ -262,9 +262,9 @@
         "n1"
       ],
       "required_for": [
-        "n35",
         "n19",
-        "n28"
+        "n28",
+        "n35"
       ]
     },
     "n19": {
@@ -328,8 +328,8 @@
       "url": "",
       "depends_on": [
         "n2",
-        "n22",
-        "n21"
+        "n21",
+        "n22"
       ],
       "required_for": [
         "n16"
@@ -338,8 +338,8 @@
     "n24": {
       "id": "n24",
       "type": "statement",
-      "label": "Je me sentais pas bien, je suis all\u00e9\ndemander un verre d'eau aux cuisines",
-      "description": "",
+      "label": "Amb Italie: j'\u00e9tais malade",
+      "description": "Ambassadeur d'Italie\n\u00ab Je me suis senti mal, et je suis all\u00e9 en cuisine demand\u00e9 un verre d'eau. \u00bb",
       "url": "",
       "depends_on": [
         "n17"
@@ -363,7 +363,7 @@
       "id": "n26",
       "type": "statement",
       "label": "Apog\u00e9e du discours \u00e0 20h25\n\"Buvons \u00e0 la belgique unie!\"",
-      "description": "",
+      "description": "Ambassadeur de Nouvelle Z\u00e9lande\n\u00ab Un discours fascinant !  Vers 20h25, le ministre a port\u00e9 un toast pour l'unit\u00e9 des nations, et tout le monde a rench\u00e9ri !\u00bb",
       "url": "",
       "depends_on": [
         "n25"
@@ -374,7 +374,7 @@
       "id": "n27",
       "type": "statement",
       "label": "20h40 Ambassadeur se sent mal",
-      "description": "",
+      "description": "Secr\u00e9taire du ministre:\n\u00ab Vers 20h40, le Ministre s'est senti mal. Il m'a demand\u00e9 de l'accompagner dans sa chambre \u00e0 l'\u00e9tage pour se reposer. Allong\u00e9, il semblait aller mieux, alors je suis redescendu m'occuper des convives. \u00bb",
       "url": "",
       "depends_on": [
         "n3"
@@ -463,7 +463,7 @@
       "id": "n34",
       "type": "evidence",
       "label": "Enregistrement vid\u00e9o: Br\u00e9sil & Nlle Z\u00e9lande arrivent \u00e0 20h02 par la porte principale",
-      "description": "",
+      "description": "Enregistrement vid\u00e9o:\non voit clairement Mme l'Ambassadeur de Nouvelle Z\u00e9lande, et M. l'Ambassadeur du Br\u00e9sil, franchir le perron de l'entr\u00e9e \u00e0 20h02 pr\u00e9cises. Ils semblent d\u00e9tendus.",
       "url": "",
       "depends_on": [
         "n8"
@@ -474,7 +474,7 @@
       "id": "n35",
       "type": "statement",
       "label": "",
-      "description": "",
+      "description": "Ambassadeur Br\u00e9silien:\n\u00ab J'avais beaucoup discut\u00e9 avec l'ambassadeur de Chine de l'organisation des JO. C'est un grand fan d'arts martiaux !\u00bb",
       "url": "",
       "depends_on": [
         "n18"
@@ -499,8 +499,8 @@
     "n37": {
       "id": "n37",
       "type": "evidence",
-      "label": "Photo d\u00e9dicac\u00e9e de Jacky Chan",
-      "description": "",
+      "label": "Photo d\u00e9dicac\u00e9e",
+      "description": "Photo de Jacky Chan, en posture de combat. Appartient \u00e0 l'ambassadeur de Chine.",
       "url": "",
       "depends_on": [
         "n36"

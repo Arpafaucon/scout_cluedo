@@ -52,5 +52,11 @@ class Card(pydantic.BaseModel):
             "proof": "preuve"
         }.get(self.type, self.type)
 
+
+
+    # def description_smart(self) -> str:
+    #     if self.type == "statement":
+    #         return self.pretty_type()
+
 class Cluedo(pydantic.BaseModel):
     cards: tp.Dict[str, Card]
