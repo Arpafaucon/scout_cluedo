@@ -1,0 +1,511 @@
+{
+  "cards": {
+    "n0": {
+      "id": "n0",
+      "type": "action",
+      "label": "Ambassadeur Afrique du Sud",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n1"
+      ],
+      "required_for": [
+        "n2",
+        "n30"
+      ]
+    },
+    "n1": {
+      "id": "n1",
+      "type": "action",
+      "label": "Tintin",
+      "description": "ACTION\nSalle de reception",
+      "url": "",
+      "depends_on": [],
+      "required_for": [
+        "n21",
+        "n0",
+        "n9",
+        "n18",
+        "n3",
+        "n25"
+      ]
+    },
+    "n2": {
+      "id": "n2",
+      "type": "evidence",
+      "label": "Invitation gala",
+      "description": "PREUVE\nune invitation pour se rendre \u00e0 la soir\u00e9e du 13 juin",
+      "url": "",
+      "depends_on": [
+        "n0"
+      ],
+      "required_for": [
+        "n12",
+        "n23"
+      ]
+    },
+    "n3": {
+      "id": "n3",
+      "type": "action",
+      "label": "Secr\u00e9taire",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n1"
+      ],
+      "required_for": [
+        "n5",
+        "n27",
+        "n4"
+      ]
+    },
+    "n4": {
+      "id": "n4",
+      "type": "evidence",
+      "label": "Lettre de recommandation",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n3"
+      ],
+      "required_for": [
+        "n5",
+        "n8"
+      ]
+    },
+    "n5": {
+      "id": "n5",
+      "type": "action",
+      "label": "Chef cuisinier",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n3",
+        "n4"
+      ],
+      "required_for": [
+        "n6",
+        "n7"
+      ]
+    },
+    "n6": {
+      "id": "n6",
+      "type": "evidence",
+      "label": "Plateau de la collation pour le ministre",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n5"
+      ],
+      "required_for": [
+        "n12"
+      ]
+    },
+    "n7": {
+      "id": "n7",
+      "type": "fingerprint",
+      "label": "Empreintes du cuisinier",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n5"
+      ],
+      "required_for": [
+        "n12"
+      ]
+    },
+    "n8": {
+      "id": "n8",
+      "type": "action",
+      "label": "Chef de la s\u00e9curit\u00e9",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n4",
+        "n28"
+      ],
+      "required_for": [
+        "n34",
+        "n29"
+      ]
+    },
+    "n9": {
+      "id": "n9",
+      "type": "action",
+      "label": "Ambassadeur Italien",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n1"
+      ],
+      "required_for": [
+        "n15"
+      ]
+    },
+    "n10": {
+      "id": "n10",
+      "type": "action",
+      "label": "Serveur",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n30"
+      ],
+      "required_for": [
+        "n31",
+        "n11"
+      ]
+    },
+    "n11": {
+      "id": "n11",
+      "type": "fingerprint",
+      "label": "Empreintes serveur",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n10"
+      ],
+      "required_for": [
+        "n12"
+      ]
+    },
+    "n12": {
+      "id": "n12",
+      "type": "action",
+      "label": "Laboratoire analyse",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n2",
+        "n14",
+        "n11",
+        "n33",
+        "n6",
+        "n7",
+        "n29"
+      ],
+      "required_for": [
+        "n13"
+      ]
+    },
+    "n13": {
+      "id": "n13",
+      "type": "proof",
+      "label": "Empreintes sur le plateau\n- serveur\n- Nlle Z\u00e9lande\n- Italie",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n12"
+      ],
+      "required_for": []
+    },
+    "n14": {
+      "id": "n14",
+      "type": "fingerprint",
+      "label": "Photo d\u00e9dicac\u00e9e",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n20"
+      ],
+      "required_for": [
+        "n12"
+      ]
+    },
+    "n15": {
+      "id": "n15",
+      "type": "statement",
+      "label": "Arriv\u00e9e par la porte principale, 21h",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n9"
+      ],
+      "required_for": [
+        "n17"
+      ]
+    },
+    "n16": {
+      "id": "n16",
+      "type": "statement",
+      "label": "Emprunt\u00e9 une cigarette \u00e0 l'ambassadeur d'Italie, en attendant l'ouverture, 19h30",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n23"
+      ],
+      "required_for": [
+        "n17"
+      ]
+    },
+    "n17": {
+      "id": "n17",
+      "type": "action",
+      "label": "Ambassadeur Italien",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n16",
+        "n15"
+      ],
+      "required_for": [
+        "n24"
+      ]
+    },
+    "n18": {
+      "id": "n18",
+      "type": "action",
+      "label": "Ambassadeur Br\u00e9sil",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n1"
+      ],
+      "required_for": [
+        "n35",
+        "n19",
+        "n28"
+      ]
+    },
+    "n19": {
+      "id": "n19",
+      "type": "statement",
+      "label": "Ambassadeur Italien est ancien joueur de foot",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n18"
+      ],
+      "required_for": [
+        "n20"
+      ]
+    },
+    "n20": {
+      "id": "n20",
+      "type": "action",
+      "label": "Ambassadeur Italien",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n19"
+      ],
+      "required_for": [
+        "n14"
+      ]
+    },
+    "n21": {
+      "id": "n21",
+      "type": "action",
+      "label": "Ambassadeur Chine",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n1"
+      ],
+      "required_for": [
+        "n22",
+        "n23"
+      ]
+    },
+    "n22": {
+      "id": "n22",
+      "type": "statement",
+      "label": "Mon taxi m'a d\u00e9pos\u00e9 \u00e0 19h",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n21"
+      ],
+      "required_for": [
+        "n23"
+      ]
+    },
+    "n23": {
+      "id": "n23",
+      "type": "action",
+      "label": "Ambassadeur Chine",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n2",
+        "n22",
+        "n21"
+      ],
+      "required_for": [
+        "n16"
+      ]
+    },
+    "n24": {
+      "id": "n24",
+      "type": "statement",
+      "label": "Je me sentais pas bien, je suis all\u00e9\ndemander un verre d'eau aux cuisines",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n17"
+      ],
+      "required_for": []
+    },
+    "n25": {
+      "id": "n25",
+      "type": "action",
+      "label": "Ambassadeur Nlle Z\u00e9lande",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n1"
+      ],
+      "required_for": [
+        "n26"
+      ]
+    },
+    "n26": {
+      "id": "n26",
+      "type": "statement",
+      "label": "Apog\u00e9e du discours \u00e0 20h25\n\"Buvons \u00e0 la belgique unie!\"",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n25"
+      ],
+      "required_for": []
+    },
+    "n27": {
+      "id": "n27",
+      "type": "statement",
+      "label": "20h40 Ambassadeur se sent mal",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n3"
+      ],
+      "required_for": []
+    },
+    "n28": {
+      "id": "n28",
+      "type": "evidence",
+      "label": "Num\u00e9ro t\u00e9l\u00e9phone",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n18"
+      ],
+      "required_for": [
+        "n8"
+      ]
+    },
+    "n29": {
+      "id": "n29",
+      "type": "evidence",
+      "label": "Adresse labo",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n8"
+      ],
+      "required_for": [
+        "n12"
+      ]
+    },
+    "n30": {
+      "id": "n30",
+      "type": "statement",
+      "label": "Description du serveur: un chef pas d\u00e9guis\u00e9",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n0"
+      ],
+      "required_for": [
+        "n10"
+      ]
+    },
+    "n31": {
+      "id": "n31",
+      "type": "statement",
+      "label": "Ambassadeur tr\u00e8s sympa s'est occup\u00e9 de servir les verres de champagne",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n10"
+      ],
+      "required_for": [
+        "n32"
+      ]
+    },
+    "n32": {
+      "id": "n32",
+      "type": "action",
+      "label": "Ambassadeur Nlle Z\u00e9lande",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n31"
+      ],
+      "required_for": [
+        "n33"
+      ]
+    },
+    "n33": {
+      "id": "n33",
+      "type": "fingerprint",
+      "label": "Empreintes Nlle Z\u00e9lande",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n32"
+      ],
+      "required_for": [
+        "n12"
+      ]
+    },
+    "n34": {
+      "id": "n34",
+      "type": "evidence",
+      "label": "Enregistrement vid\u00e9o: Br\u00e9sil & Nlle Z\u00e9lande arrivent \u00e0 20h02 par la porte principale",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n8"
+      ],
+      "required_for": []
+    },
+    "n35": {
+      "id": "n35",
+      "type": "statement",
+      "label": "",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n18"
+      ],
+      "required_for": [
+        "n36"
+      ]
+    },
+    "n36": {
+      "id": "n36",
+      "type": "action",
+      "label": "Ambassadeur Chinois",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n35"
+      ],
+      "required_for": [
+        "n37"
+      ]
+    },
+    "n37": {
+      "id": "n37",
+      "type": "evidence",
+      "label": "Photo d\u00e9dicac\u00e9e de Jacky Chan",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n36"
+      ],
+      "required_for": []
+    }
+  }
+}
