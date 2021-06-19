@@ -14,7 +14,7 @@ import numpy as np
 
 import logging
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 LOGGER = logging.getLogger(__name__)
 # coordinate system from the top le1ft corne
 # X is width
@@ -103,6 +103,24 @@ def get_url(card: Card) -> str:
         else:
             return "fingerprint.png"
 
+def search_image(url: str, image_dolder:Path) -> Path:
+    candidates = list(image_dolder.glob(f"*{url}*"))
+    LOGGER.debug("search '%s' -> %s", url, candidates)
+    assert len(candidates) == 1
+    return candidates[0]
+
+def format_description(d:str):
+    lines = d.splitlines()
+    wrapped_lines = []
+    for l in lines:
+        wrapped_lines.extend(textwrap.wrap(
+            l,
+            width=DESCRIPTION_WIDTH_CHARS,
+            initial_indent="",
+            subsequent_indent="",
+        ))
+    return "\n".join(wrapped_lines)
+
 def build_card(card: Card) -> Image:
     # main_image = PIL.Image.new(
     #     "RGBA", IMG_SIZE_PX.tuple_int(), color="yellow"
@@ -114,7 +132,7 @@ def build_card(card: Card) -> Image:
     # title
     ################
     title_font = PIL.ImageFont.truetype("fonts/topsecretstamp.ttf", size=TITLE_SIZE)
-    title_text = card.pretty_type().upper()
+    title_text = card.description_smart()
     title_text_size = Size(title_font.getsize(title_text))
     title_xy = topleft_from_center(TITLE_CENTER_RT * IMG_SIZE_PX, title_text_size)
     draw.text(title_xy.tuple_int(), title_text, font=title_font, fill="black")
@@ -129,33 +147,26 @@ def build_card(card: Card) -> Image:
     draw.text(id_xy.tuple_int(), id_text, font=id_font, fill="black")
     LOGGER.info("drawn ID")
 
-    # Requires
-    ################
-    requires_text = "requiert: " + ",".join(map(format_id, card.depends_on))
-    depon_text_size = Size(id_font.getsize(requires_text))
-    depon_xy = topleft_from_center(DEPON_CENTER_RT * IMG_SIZE_PX, depon_text_size)
-    draw.text(depon_xy.tuple_int(), requires_text, font=id_font, fill="black")
-    LOGGER.info("drawn depends-on")
+    # # Requires
+    # ################
+    # requires_text = "requiert: " + ",".join(map(format_id, card.depends_on))
+    # depon_text_size = Size(id_font.getsize(requires_text))
+    # depon_xy = topleft_from_center(DEPON_CENTER_RT * IMG_SIZE_PX, depon_text_size)
+    # draw.text(depon_xy.tuple_int(), requires_text, font=id_font, fill="black")
+    # LOGGER.info("drawn depends-on")
 
-    # Requires
-    ################
-    reqfor_text = "donne accès à: " + ",".join(map(format_id, card.required_for))
-    reqfor_text_size = Size(id_font.getsize(reqfor_text))
-    reqfor_xy = topleft_from_center(REQFOR_CENTER_RT * IMG_SIZE_PX, reqfor_text_size)
-    draw.text(reqfor_xy.tuple_int(), reqfor_text, font=id_font, fill="green")
-    LOGGER.info("drawn depends-on")
+    # # Requires
+    # ################
+    # reqfor_text = "donne accès à: " + ",".join(map(format_id, card.required_for))
+    # reqfor_text_size = Size(id_font.getsize(reqfor_text))
+    # reqfor_xy = topleft_from_center(REQFOR_CENTER_RT * IMG_SIZE_PX, reqfor_text_size)
+    # draw.text(reqfor_xy.tuple_int(), reqfor_text, font=id_font, fill="green")
+    # LOGGER.info("drawn depends-on")
 
     # description
     ################
     description_font = title_font
-    description_text = "\n".join(
-        textwrap.wrap(
-            card.description,
-            width=DESCRIPTION_WIDTH_CHARS,
-            initial_indent="",
-            subsequent_indent="",
-        )
-    )
+    description_text = format_description(card.description)
     description_text_size = Size(description_font.getsize(description_text))
     description_xy = (
         topleft_from_center(DESCRIPTION_CENTER_RT, DESCRIPTION_SIZE_RT) * IMG_SIZE_PX
@@ -174,7 +185,8 @@ def build_card(card: Card) -> Image:
     template_img_center = Size(IMG_CENTER_X_PC, IMG_CENTER_Y_PC) * 1e-2 * IMG_SIZE_PX
 
     image_url = get_url(card)
-    illustration_raw = PIL.Image.open(Path("images") / image_url).convert("RGBA")
+    image_path = search_image(image_url, Path("images"))
+    illustration_raw = PIL.Image.open(image_path).convert("RGBA")
     illustration_raw_size_wh = Size(illustration_raw.size)
     LOGGER.info("Initial illustration size:  %s", illustration_raw_size_wh)
     # resize
@@ -194,20 +206,22 @@ def build_card(card: Card) -> Image:
 
     return main_image
 
+if __name__ == "__main__":
+    clu = Cluedo.parse_file("cluedo.json")
 
-clu = Cluedo.parse_file("cluedo.json")
+    dest_folder = Path("output")
+    if dest_folder.exists():
+        shutil.rmtree(dest_folder)
+    dest_folder.mkdir(parents=True)
 
-dest_folder = Path("output")
-if dest_folder.exists():
-    shutil.rmtree(dest_folder)
-dest_folder.mkdir(parents=True)
+    for i, (card_id, card) in enumerate(clu.cards.items()):
+        if card.type == "action":
+            continue
+        im = build_card(card)
+        im.save(dest_folder / f"{card_id}.png")
+        # if i > 18 and False:
+        #     break
 
-for i, (card_id, card) in enumerate(clu.cards.items()):
-    im = build_card(card)
-    im.save(dest_folder / f"{card_id}.png")
-    if i > 18 and False:
-        break
-
-# any_card = clu.cards["n2"]
-# PIL.ImageShow.register(PIL.ImageShow.EogViewer, -1)
-# im.show()
+    # any_card = clu.cards["n2"]
+    # PIL.ImageShow.register(PIL.ImageShow.EogViewer, -1)
+    # im.show()

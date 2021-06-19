@@ -7,7 +7,7 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n1"
+        "n38"
       ],
       "required_for": [
         "n2",
@@ -22,26 +22,21 @@
       "url": "",
       "depends_on": [],
       "required_for": [
-        "n0",
-        "n18",
-        "n25",
-        "n3",
-        "n9",
-        "n21"
+        "n38"
       ]
     },
     "n2": {
       "id": "n2",
       "type": "evidence",
       "label": "Invitation gala",
-      "description": "PREUVE\nune invitation pour se rendre \u00e0 la soir\u00e9e du 13 juin",
-      "url": "",
+      "description": "Invitation pour la soir\u00e9e gala du 13 juin 2021, d\u00e9but des festivit\u00e9s \u00e0 20h.",
+      "url": "Invitation gala",
       "depends_on": [
         "n0"
       ],
       "required_for": [
-        "n12",
-        "n23"
+        "n23",
+        "n12"
       ]
     },
     "n3": {
@@ -51,12 +46,11 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n1"
+        "n38"
       ],
       "required_for": [
-        "n5",
-        "n27",
-        "n4"
+        "n4",
+        "n27"
       ]
     },
     "n4": {
@@ -64,7 +58,7 @@
       "type": "evidence",
       "label": "Lettre de recommandation",
       "description": "\u00ab A qui de droit:\nPar la pr\u00e9sente, je vous prie de tout faire pour faciliter le travail des possesseurs de cette missive. Leur mission rel\u00e8ve des int\u00e9r\u00eats sup\u00e9rieurs de la Nation.\u00bb",
-      "url": "",
+      "url": "Lettre recommandation",
       "depends_on": [
         "n3"
       ],
@@ -80,20 +74,20 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n3",
         "n4"
       ],
       "required_for": [
+        "n6",
         "n7",
-        "n6"
+        "n40"
       ]
     },
     "n6": {
       "id": "n6",
       "type": "evidence",
       "label": "Plateau de la collation pour le ministre",
-      "description": "",
-      "url": "",
+      "description": "Plateau qui servi la fl\u00fbte de champagne au Ministre Belge.",
+      "url": "Plateau",
       "depends_on": [
         "n5"
       ],
@@ -105,8 +99,8 @@
       "id": "n7",
       "type": "fingerprint",
       "label": "Empreintes du cuisinier",
-      "description": "",
-      "url": "",
+      "description": "Empreinte digitale du cuisinier.",
+      "url": "Empreinte",
       "depends_on": [
         "n5"
       ],
@@ -121,12 +115,14 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n28",
-        "n4"
+        "n4",
+        "n28"
       ],
       "required_for": [
+        "n34",
+        "n39",
         "n29",
-        "n34"
+        "n55"
       ]
     },
     "n9": {
@@ -136,7 +132,7 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n1"
+        "n38"
       ],
       "required_for": [
         "n15"
@@ -152,16 +148,16 @@
         "n30"
       ],
       "required_for": [
-        "n31",
-        "n11"
+        "n11",
+        "n31"
       ]
     },
     "n11": {
       "id": "n11",
       "type": "fingerprint",
-      "label": "Empreintes serveur",
-      "description": "",
-      "url": "",
+      "label": "Empreintes du serveur",
+      "description": "Empreinte digitale du serveur",
+      "url": "Empreinte",
       "depends_on": [
         "n10"
       ],
@@ -172,17 +168,17 @@
     "n12": {
       "id": "n12",
       "type": "action",
-      "label": "Laboratoire analyse",
+      "label": "(Tintin) Laboratoire analyse",
       "description": "",
       "url": "",
       "depends_on": [
-        "n7",
-        "n33",
+        "n6",
+        "n11",
+        "n14",
         "n29",
         "n2",
-        "n14",
-        "n6",
-        "n11"
+        "n7",
+        "n33"
       ],
       "required_for": [
         "n13"
@@ -190,10 +186,10 @@
     },
     "n13": {
       "id": "n13",
-      "type": "proof",
-      "label": "Empreintes sur le plateau\n- serveur\n- Nlle Z\u00e9lande\n- Italie",
-      "description": "",
-      "url": "",
+      "type": "evidence",
+      "label": "R\u00e9sultats d'analyse du plateau",
+      "description": "Rapport d'analyse, pr\u00e9sence de trois empreintes : ..................................",
+      "url": "Rapport analyse",
       "depends_on": [
         "n12"
       ],
@@ -203,8 +199,8 @@
       "id": "n14",
       "type": "evidence",
       "label": "Photo d\u00e9dicac\u00e9e",
-      "description": "Une photo d\u00e9dicac\u00e9e de l'Ambassadeur d'Italie, \u00e0 l'\u00e9poque o\u00f9 il \u00e9tait un jeune footballeur prodige",
-      "url": "",
+      "description": "Une photo d\u00e9dicac\u00e9e de l'Ambassadeur d'Italie, \u00e0 l'\u00e9poque o\u00f9 il \u00e9tait un jeune footballeur prodige.",
+      "url": "D\u00e9dicace Italien",
       "depends_on": [
         "n20"
       ],
@@ -215,9 +211,9 @@
     "n15": {
       "id": "n15",
       "type": "statement",
-      "label": "Arriv\u00e9e par la porte principale, 21h",
-      "description": "Ambassadeur d'Italie:\n\u00ab J'avvais un appel important \u00e0 passer, je suis arriv\u00e9 en retard \u00e0 la c\u00e9r\u00e9monie. Je suis entr\u00e9 dans le salon par la porte principale, autour de 21h.\u00bb",
-      "url": "",
+      "label": "Arriv\u00e9e par la porte principale \u00e0 20h15",
+      "description": "Ambassadeur Italien :\n\u00ab J'avais un appel important \u00e0 passer, je suis arriv\u00e9 en retard \u00e0 la c\u00e9r\u00e9monie. Je suis entr\u00e9 dans le salon par la porte principale, autour de 20h15.\u00bb",
+      "url": "Appel",
       "depends_on": [
         "n9"
       ],
@@ -229,7 +225,7 @@
       "id": "n16",
       "type": "statement",
       "label": "Emprunt\u00e9 une cigarette \u00e0 l'ambassadeur d'Italie, en attendant l'ouverture, 19h30",
-      "description": "Ambassadeur de Chine:\n\u00ab Vers 19h30, en attendant l'ouverture du gala, j'ai emprunt\u00e9 un cigare \u00e0 l'ambassadeur d'Italie et je l'ai fum\u00e9 avec lui.\u00bb",
+      "description": "Ambassadeur Chinois :\n\u00ab Vers 19h30, en attendant l'ouverture du gala, j'ai emprunt\u00e9 une cigarette \u00e0 l'ambassadeur d'Italie et je l'ai fum\u00e9 avec lui.\u00bb",
       "url": "",
       "depends_on": [
         "n23"
@@ -259,7 +255,7 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n1"
+        "n38"
       ],
       "required_for": [
         "n19",
@@ -271,8 +267,8 @@
       "id": "n19",
       "type": "statement",
       "label": "Ambassadeur Italien est ancien joueur de foot",
-      "description": "",
-      "url": "",
+      "description": "Ambassadeur Br\u00e9silien :\n\"L'ambassadeur Italien a \u00e9t\u00e9 un grand joueur \u00e0 son \u00e9poque, une vraie star.\"",
+      "url": "Balle",
       "depends_on": [
         "n18"
       ],
@@ -300,24 +296,25 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n1"
+        "n38"
       ],
       "required_for": [
-        "n22",
-        "n23"
+        "n22"
       ]
     },
     "n22": {
       "id": "n22",
       "type": "statement",
       "label": "Mon taxi m'a d\u00e9pos\u00e9 \u00e0 19h",
-      "description": "",
-      "url": "",
+      "description": "Ambassadeur Chinois :\n\"Mon taxi m'a d\u00e9pos\u00e9 \u00e0 19h, le trafic \u00e9tait \u00e9tonnement fluide.\"",
+      "url": "Taxi",
       "depends_on": [
-        "n21"
+        "n21",
+        "n22"
       ],
       "required_for": [
-        "n23"
+        "n23",
+        "n22"
       ]
     },
     "n23": {
@@ -328,7 +325,6 @@
       "url": "",
       "depends_on": [
         "n2",
-        "n21",
         "n22"
       ],
       "required_for": [
@@ -339,8 +335,8 @@
       "id": "n24",
       "type": "statement",
       "label": "Amb Italie: j'\u00e9tais malade",
-      "description": "Ambassadeur d'Italie\n\u00ab Je me suis senti mal, et je suis all\u00e9 en cuisine demand\u00e9 un verre d'eau. \u00bb",
-      "url": "",
+      "description": "Ambassadeur Italien :\n\u00ab Je me suis senti mal, je suis all\u00e9 en cuisine demander un verre d'eau. Et puis vous me fatiguez avec vos question, allez chercher ailleurs un peu! \u00bb",
+      "url": "Verre eau",
       "depends_on": [
         "n17"
       ],
@@ -353,7 +349,7 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n1"
+        "n38"
       ],
       "required_for": [
         "n26"
@@ -363,7 +359,7 @@
       "id": "n26",
       "type": "statement",
       "label": "Apog\u00e9e du discours \u00e0 20h25\n\"Buvons \u00e0 la belgique unie!\"",
-      "description": "Ambassadeur de Nouvelle Z\u00e9lande\n\u00ab Un discours fascinant !  Vers 20h25, le ministre a port\u00e9 un toast pour l'unit\u00e9 des nations, et tout le monde a rench\u00e9ri !\u00bb",
+      "description": "Ambassadeur N\u00e9oz\u00e9landais :\n\" Un discours fascinant !  Vers 20h25, le ministre a port\u00e9 un toast pour l'unit\u00e9 des nations, et tout le monde a rench\u00e9ri ! \"",
       "url": "",
       "depends_on": [
         "n25"
@@ -373,9 +369,9 @@
     "n27": {
       "id": "n27",
       "type": "statement",
-      "label": "20h40 Ambassadeur se sent mal",
-      "description": "Secr\u00e9taire du ministre:\n\u00ab Vers 20h40, le Ministre s'est senti mal. Il m'a demand\u00e9 de l'accompagner dans sa chambre \u00e0 l'\u00e9tage pour se reposer. Allong\u00e9, il semblait aller mieux, alors je suis redescendu m'occuper des convives. \u00bb",
-      "url": "",
+      "label": "20h40 Ministre se sent mal",
+      "description": "Secr\u00e9taire du ministre :\n\" Vers 20h40, le Ministre s'est senti mal. Il m'a demand\u00e9 de l'accompagner dans sa chambre \u00e0 l'\u00e9tage pour se reposer. Allong\u00e9, il semblait aller mieux, alors je suis redescendu m'occuper des convives. \"",
+      "url": "Fatigue",
       "depends_on": [
         "n3"
       ],
@@ -384,9 +380,9 @@
     "n28": {
       "id": "n28",
       "type": "evidence",
-      "label": "Num\u00e9ro t\u00e9l\u00e9phone",
+      "label": "T\u00e9l\u00e9phone du chef de la s\u00e9curit\u00e9",
       "description": "",
-      "url": "",
+      "url": "Num\u00e9ro s\u00e9curit\u00e9",
       "depends_on": [
         "n18"
       ],
@@ -397,13 +393,14 @@
     "n29": {
       "id": "n29",
       "type": "evidence",
-      "label": "Adresse labo",
-      "description": "",
-      "url": "",
+      "label": "Adresse du laboratoire",
+      "description": "Laboratoire d'analyse m\u00e9dicale r\u00e9put\u00e9 pour sa fiabilit\u00e9 exemplaire. Tintin se chargera de transmettre vos \u00e9chantillons.",
+      "url": "Adresse Labo",
       "depends_on": [
         "n8"
       ],
       "required_for": [
+        "n53",
         "n12"
       ]
     },
@@ -411,12 +408,13 @@
       "id": "n30",
       "type": "statement",
       "label": "Description du serveur: un chef pas d\u00e9guis\u00e9",
-      "description": "",
-      "url": "",
+      "description": "Ambassadeur Sud-Africain :\n\"Le serveur ? Des lunettes fonc\u00e9es, cheveux poivre et sel, ras\u00e9 de pr\u00e8s de m\u00e9moire.\"",
+      "url": "T\u00e9moin",
       "depends_on": [
         "n0"
       ],
       "required_for": [
+        "n51",
         "n10"
       ]
     },
@@ -424,8 +422,8 @@
       "id": "n31",
       "type": "statement",
       "label": "Ambassadeur tr\u00e8s sympa s'est occup\u00e9 de servir les verres de champagne",
-      "description": "",
-      "url": "",
+      "description": "Serveur :\n\" L'ambassadeur N\u00e9oz\u00e9landais \u00e9tait bien aimable, il a pris le plateau pour servir les verres \u00e0 ma place ! \"",
+      "url": "Silver Fern",
       "depends_on": [
         "n10"
       ],
@@ -450,8 +448,8 @@
       "id": "n33",
       "type": "fingerprint",
       "label": "Empreintes Nlle Z\u00e9lande",
-      "description": "",
-      "url": "",
+      "description": "Empreinte digitale de l'Ambassadeur de Nouvelle-Z\u00e9lande.",
+      "url": "Empreinte",
       "depends_on": [
         "n32"
       ],
@@ -462,9 +460,9 @@
     "n34": {
       "id": "n34",
       "type": "evidence",
-      "label": "Enregistrement vid\u00e9o: Br\u00e9sil & Nlle Z\u00e9lande arrivent \u00e0 20h02 par la porte principale",
-      "description": "Enregistrement vid\u00e9o:\non voit clairement Mme l'Ambassadeur de Nouvelle Z\u00e9lande, et M. l'Ambassadeur du Br\u00e9sil, franchir le perron de l'entr\u00e9e \u00e0 20h02 pr\u00e9cises. Ils semblent d\u00e9tendus.",
-      "url": "",
+      "label": "Enregistrement vid\u00e9o - porte principale",
+      "description": "Enregistrement vid\u00e9o :\non voit clairement Mme l'Ambassadeur de Nouvelle Z\u00e9lande et M. l'Ambassadeur du Br\u00e9sil franchir le perron de l'entr\u00e9e \u00e0 20h02 pr\u00e9cis. Ils semblent d\u00e9tendus.",
+      "url": "Vid\u00e9o surveillance",
       "depends_on": [
         "n8"
       ],
@@ -474,8 +472,8 @@
       "id": "n35",
       "type": "statement",
       "label": "",
-      "description": "Ambassadeur Br\u00e9silien:\n\u00ab J'avais beaucoup discut\u00e9 avec l'ambassadeur de Chine de l'organisation des JO. C'est un grand fan d'arts martiaux !\u00bb",
-      "url": "",
+      "description": "Ambassadeur Br\u00e9silien :\n\u00ab J'avais beaucoup discut\u00e9 avec l'ambassadeur de Chine de l'organisation des JO. C'est un grand fan d'arts martiaux !\u00bb",
+      "url": "JO RIO",
       "depends_on": [
         "n18"
       ],
@@ -500,10 +498,258 @@
       "id": "n37",
       "type": "evidence",
       "label": "Photo d\u00e9dicac\u00e9e",
-      "description": "Photo de Jacky Chan, en posture de combat. Appartient \u00e0 l'ambassadeur de Chine.",
-      "url": "",
+      "description": "Photo d\u00e9dicac\u00e9e par Jacky Chan pour l'ambassadeur de Chine.",
+      "url": "Jacky Chan",
       "depends_on": [
         "n36"
+      ],
+      "required_for": []
+    },
+    "n38": {
+      "id": "n38",
+      "type": "evidence",
+      "label": "Mandat d'enqu\u00eate",
+      "description": "Autorisation de mener l'enqu\u00eate relative \u00e0 l'assassinat du Ministre Belge.",
+      "url": "Mandat",
+      "depends_on": [
+        "n1"
+      ],
+      "required_for": [
+        "n3",
+        "n9",
+        "n21",
+        "n41",
+        "n18",
+        "n0",
+        "n25"
+      ]
+    },
+    "n39": {
+      "id": "n39",
+      "type": "statement",
+      "label": "Incidents de la soir\u00e9e",
+      "description": "Chef de la s\u00e9curit\u00e9: \n\"Seulement deux incidents \u00e0 signaler pendant la soir\u00e9e: une irruption d'un personnel non autoris\u00e9 qui chantait tr\u00e8s fort, et un incident culinaire mineur. Pour ce dernier, j'ai peu de d\u00e9tails.\"",
+      "url": "",
+      "depends_on": [
+        "n8"
+      ],
+      "required_for": [
+        "n43"
+      ]
+    },
+    "n40": {
+      "id": "n40",
+      "type": "statement",
+      "label": "Friteuse d\u00e9fectueuse ?",
+      "description": "Chef cuisinier: \n\" Une prestation culinaire de qualit\u00e9, ce d\u00eener ! On a eu un peu peur lorsque la friteuse a pris feu ! Je n'aurais pas du autoriser le nouveau \u00e0 \u00eatre dessus.\"",
+      "url": "",
+      "depends_on": [
+        "n5"
+      ],
+      "required_for": [
+        "n51"
+      ]
+    },
+    "n41": {
+      "id": "n41",
+      "type": "action",
+      "label": "Ambassadeur Canada",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n38"
+      ],
+      "required_for": [
+        "n42"
+      ]
+    },
+    "n42": {
+      "id": "n42",
+      "type": "statement",
+      "label": "Se rappelle pas de tout...",
+      "description": "Ambassadeur Canadien: \n\"Sacr\u00e9e soir\u00e9e, calice ! Et sacr\u00e9 champagne apr\u00e8s le discours ! Je suis d\u00e9sol\u00e9, mais je crois que j'\u00e9tais assez ivre !\"",
+      "url": "interrogation",
+      "depends_on": [
+        "n41"
+      ],
+      "required_for": [
+        "n45"
+      ]
+    },
+    "n43": {
+      "id": "n43",
+      "type": "action",
+      "label": "Chef cuisinier",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n39"
+      ],
+      "required_for": [
+        "n44"
+      ]
+    },
+    "n44": {
+      "id": "n44",
+      "type": "statement",
+      "label": "Ambassadeur bourr\u00e9 chante",
+      "description": "Chef cuisinier: \n\"En effet, nous avons \u00e9t\u00e9 d\u00e9rang\u00e9 par un Ambassadeur un peu pompette. On a d\u00fb se mettre \u00e0 trois pour le convaincre de chanter ailleurs ! \"",
+      "url": "",
+      "depends_on": [
+        "n43"
+      ],
+      "required_for": [
+        "n45"
+      ]
+    },
+    "n45": {
+      "id": "n45",
+      "type": "action",
+      "label": "Ambassadeur Canada",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n44",
+        "n42"
+      ],
+      "required_for": [
+        "n46"
+      ]
+    },
+    "n46": {
+      "id": "n46",
+      "type": "statement",
+      "label": "c'\u00e9tait bien lui, alibi ?",
+      "description": "Ambassadeur Canadien:\n\"AAAAAAh... c'\u00e9tait bien moi ! Par contre c'\u00e9tait bien apr\u00e8s le discours, \u00e7a, non ? Juste avant j'\u00e9tais un Ambassadeur qui me parlait de l'Awal\u00e9, un jeu traditionnel de son pays. Peut-\u00eatre l'Italien ?\"",
+      "url": "",
+      "depends_on": [
+        "n45"
+      ],
+      "required_for": [
+        "n47",
+        "n49"
+      ]
+    },
+    "n47": {
+      "id": "n47",
+      "type": "action",
+      "label": "Ambassadeur Italien",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n46"
+      ],
+      "required_for": [
+        "n48"
+      ]
+    },
+    "n48": {
+      "id": "n48",
+      "type": "statement",
+      "label": "Connais pas",
+      "description": "Ambassadeur Italien:\n\"Mmh, jamais entendu parler! EN tout cas, c'est s\u00fbr que  \u00e7a ne vaut pas le football. Maintenant du balai, j'ai du travail !\"",
+      "url": "",
+      "depends_on": [
+        "n47"
+      ],
+      "required_for": []
+    },
+    "n49": {
+      "id": "n49",
+      "type": "action",
+      "label": "Ambassadeur Afrique du Sud",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n46"
+      ],
+      "required_for": [
+        "n50"
+      ]
+    },
+    "n50": {
+      "id": "n50",
+      "type": "statement",
+      "label": "Confirmation",
+      "description": "Ambassadeur Sud-Africain:\n\" Oui, je confirme avoir discut\u00e9 avec mon coll\u00e8gue canadien...enfin essay\u00e9. Vers 21h30, il est parti vers les cuisines; il m'a dit:  'Je vais les remercier avec une chanson de mon cru', je n'ai pas pu le retenir\"",
+      "url": "",
+      "depends_on": [
+        "n49"
+      ],
+      "required_for": []
+    },
+    "n51": {
+      "id": "n51",
+      "type": "action",
+      "label": "Serveur",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n30",
+        "n40"
+      ],
+      "required_for": [
+        "n54",
+        "n52"
+      ]
+    },
+    "n52": {
+      "id": "n52",
+      "type": "statement",
+      "label": "Serveur: friteuse",
+      "description": "Serveur:\n\"Juste avant 20h, en allant chercher les plateaux, les cuisiniers \u00e9taient agit\u00e9s et il y avait une odeur de br\u00fbl\u00e9. J'ai demand\u00e9 \u00e0 un homme qui passait la ce qu'il se passait, mais il est parti de la zone de desserte sans me r\u00e9pondre.\"",
+      "url": "",
+      "depends_on": [
+        "n51"
+      ],
+      "required_for": []
+    },
+    "n53": {
+      "id": "n53",
+      "type": "action",
+      "label": "(Tintin) Laboratoire d'analyse",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n54",
+        "n29"
+      ],
+      "required_for": [
+        "n56"
+      ]
+    },
+    "n54": {
+      "id": "n54",
+      "type": "evidence",
+      "label": "Flacon de colorant",
+      "description": "Trouv\u00e9 sur la table de desserte par le serveur. Il y a un fond de liquide incolore \u00e0 l'int\u00e9rieur. ",
+      "url": "Flacon",
+      "depends_on": [
+        "n51"
+      ],
+      "required_for": [
+        "n53"
+      ]
+    },
+    "n55": {
+      "id": "n55",
+      "type": "statement",
+      "label": "Mort du ministre",
+      "description": "Chef de la s\u00e9curit\u00e9:\n\"J'ai appris l'\u00e9tat du Ministre vers 21h15. Nous l'avons imm\u00e9diatement \u00e9vacu\u00e9 par h\u00e9licopt\u00e8re. H\u00e9las, son d\u00e9c\u00e8s a \u00e9t\u00e9 confirm\u00e9 \u00e0 22h30.\"",
+      "url": "",
+      "depends_on": [
+        "n8"
+      ],
+      "required_for": []
+    },
+    "n56": {
+      "id": "n56",
+      "type": "evidence",
+      "label": "Rapport d'analyse",
+      "description": "Forte concentration de:\n- Chlorure de Sodium\n- Glucopyranoside\nTraces de:\n- Ethanol\n- Strychnine",
+      "url": "Rapport analyse",
+      "depends_on": [
+        "n53"
       ],
       "required_for": []
     }

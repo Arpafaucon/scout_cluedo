@@ -1,0 +1,182 @@
+__________________
+ID:  n12
+Label:  (Tintin) Laboratoire analyse
+Prérequis:
+- n14 (indice: Une photo dédicacée de l'Ambassadeur [...])
+- n6 (indice: Plateau qui servi la flûte de champagne au [...])
+- n11 (empreinte: Empreinte digitale du serveur)
+- n2 (indice: Invitation pour la soirée gala du 13 juin [...])
+- n29 (indice: Laboratoire d'analyse médicale réputé pour [...])
+- n7 (empreinte: Empreinte digitale du cuisinier.)
+- n33 (empreinte: Empreinte digitale de l'Ambassadeur de [...])
+Donner:
+- n13 (indice: Rapport d'analyse, présence de trois [...])
+__________________
+ID:  n53
+Label:  (Tintin) Laboratoire d'analyse
+Prérequis:
+- n54 (indice: Trouvé sur la table de desserte par le [...])
+- n29 (indice: Laboratoire d'analyse médicale réputé pour [...])
+Donner:
+- n56 (indice: Forte concentration de: - Chlorure de Sodium [...])
+__________________
+ID:  n0
+Label:  Ambassadeur Afrique du Sud
+Prérequis:
+- n38 (indice: Autorisation de mener l'enquête relative à [...])
+Donner:
+- n30 (déclaration: Ambassadeur Sud-Africain : "Le serveur ? Des [...])
+- n2 (indice: Invitation pour la soirée gala du 13 juin [...])
+__________________
+ID:  n49
+Label:  Ambassadeur Afrique du Sud
+Prérequis:
+- n46 (déclaration: Ambassadeur Canadien: "AAAAAAh... c'était [...])
+Donner:
+- n50 (déclaration: Ambassadeur Sud-Africain: " Oui, je confirme [...])
+__________________
+ID:  n18
+Label:  Ambassadeur Brésil
+Prérequis:
+- n38 (indice: Autorisation de mener l'enquête relative à [...])
+Donner:
+- n35 (déclaration: Ambassadeur Brésilien : « J'avais beaucoup [...])
+- n19 (déclaration: Ambassadeur Brésilien : "L'ambassadeur [...])
+- n28 (indice: )
+__________________
+ID:  n41
+Label:  Ambassadeur Canada
+Prérequis:
+- n38 (indice: Autorisation de mener l'enquête relative à [...])
+Donner:
+- n42 (déclaration: Ambassadeur Canadien: "Sacrée soirée, calice [...])
+__________________
+ID:  n45
+Label:  Ambassadeur Canada
+Prérequis:
+- n44 (déclaration: Chef cuisinier: "En effet, nous avons été [...])
+- n42 (déclaration: Ambassadeur Canadien: "Sacrée soirée, calice [...])
+Donner:
+- n46 (déclaration: Ambassadeur Canadien: "AAAAAAh... c'était [...])
+__________________
+ID:  n21
+Label:  Ambassadeur Chine
+Prérequis:
+- n38 (indice: Autorisation de mener l'enquête relative à [...])
+Donner:
+- n22 (déclaration: Ambassadeur Chinois : "Mon taxi m'a déposé à [...])
+__________________
+ID:  n23
+Label:  Ambassadeur Chine
+Prérequis:
+- n22 (déclaration: Ambassadeur Chinois : "Mon taxi m'a déposé à [...])
+- n2 (indice: Invitation pour la soirée gala du 13 juin [...])
+Donner:
+- n16 (déclaration: Ambassadeur Chinois : « Vers 19h30, en [...])
+__________________
+ID:  n36
+Label:  Ambassadeur Chinois
+Prérequis:
+- n35 (déclaration: Ambassadeur Brésilien : « J'avais beaucoup [...])
+Donner:
+- n37 (indice: Photo dédicacée par Jacky Chan pour [...])
+__________________
+ID:  n9
+Label:  Ambassadeur Italien
+Prérequis:
+- n38 (indice: Autorisation de mener l'enquête relative à [...])
+Donner:
+- n15 (déclaration: Ambassadeur Italien : « J'avais un appel [...])
+__________________
+ID:  n17
+Label:  Ambassadeur Italien
+Prérequis:
+- n15 (déclaration: Ambassadeur Italien : « J'avais un appel [...])
+- n16 (déclaration: Ambassadeur Chinois : « Vers 19h30, en [...])
+Donner:
+- n24 (déclaration: Ambassadeur Italien : « Je me suis senti [...])
+__________________
+ID:  n20
+Label:  Ambassadeur Italien
+Prérequis:
+- n19 (déclaration: Ambassadeur Brésilien : "L'ambassadeur [...])
+Donner:
+- n14 (indice: Une photo dédicacée de l'Ambassadeur [...])
+__________________
+ID:  n47
+Label:  Ambassadeur Italien
+Prérequis:
+- n46 (déclaration: Ambassadeur Canadien: "AAAAAAh... c'était [...])
+Donner:
+- n48 (déclaration: Ambassadeur Italien: "Mmh, jamais entendu [...])
+__________________
+ID:  n25
+Label:  Ambassadeur Nlle Zélande
+Prérequis:
+- n38 (indice: Autorisation de mener l'enquête relative à [...])
+Donner:
+- n26 (déclaration: Ambassadeur Néozélandais : " Un discours [...])
+__________________
+ID:  n32
+Label:  Ambassadeur Nlle Zélande
+Prérequis:
+- n31 (déclaration: Serveur : " L'ambassadeur Néozélandais était [...])
+Donner:
+- n33 (empreinte: Empreinte digitale de l'Ambassadeur de [...])
+__________________
+ID:  n5
+Label:  Chef cuisinier
+Prérequis:
+- n4 (indice: « A qui de droit: Par la présente, je vous [...])
+Donner:
+- n40 (déclaration: Chef cuisinier: " Une prestation culinaire [...])
+- n6 (indice: Plateau qui servi la flûte de champagne au [...])
+- n7 (empreinte: Empreinte digitale du cuisinier.)
+__________________
+ID:  n43
+Label:  Chef cuisinier
+Prérequis:
+- n39 (déclaration: Chef de la sécurité: "Seulement deux [...])
+Donner:
+- n44 (déclaration: Chef cuisinier: "En effet, nous avons été [...])
+__________________
+ID:  n8
+Label:  Chef de la sécurité
+Prérequis:
+- n28 (indice: )
+- n4 (indice: « A qui de droit: Par la présente, je vous [...])
+Donner:
+- n29 (indice: Laboratoire d'analyse médicale réputé pour [...])
+- n55 (déclaration: Chef de la sécurité: "J'ai appris l'état du [...])
+- n39 (déclaration: Chef de la sécurité: "Seulement deux [...])
+- n34 (indice: Enregistrement vidéo : on voit clairement [...])
+__________________
+ID:  n3
+Label:  Secrétaire
+Prérequis:
+- n38 (indice: Autorisation de mener l'enquête relative à [...])
+Donner:
+- n27 (déclaration: Secrétaire du ministre : " Vers 20h40, le [...])
+- n4 (indice: « A qui de droit: Par la présente, je vous [...])
+__________________
+ID:  n10
+Label:  Serveur
+Prérequis:
+- n30 (déclaration: Ambassadeur Sud-Africain : "Le serveur ? Des [...])
+Donner:
+- n31 (déclaration: Serveur : " L'ambassadeur Néozélandais était [...])
+- n11 (empreinte: Empreinte digitale du serveur)
+__________________
+ID:  n51
+Label:  Serveur
+Prérequis:
+- n30 (déclaration: Ambassadeur Sud-Africain : "Le serveur ? Des [...])
+- n40 (déclaration: Chef cuisinier: " Une prestation culinaire [...])
+Donner:
+- n54 (indice: Trouvé sur la table de desserte par le [...])
+- n52 (déclaration: Serveur: "Juste avant 20h, en allant [...])
+__________________
+ID:  n1
+Label:  Tintin
+Donner:
+- n38 (indice: Autorisation de mener l'enquête relative à [...])

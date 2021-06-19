@@ -31,23 +31,23 @@ for id, card in cards.items():
     print(card)
 Path("cluedo.json").write_text(cluedo.json(indent=2))
 
-g = networkx.DiGraph()
-for c in cards.values():
-    g.add_node(c.label)
-for c in cards.values():
-    for target in c.required_for:
-        g.add_edge(c.id, target)
+# g = networkx.DiGraph()
+# for c in cards.values():
+#     g.add_node(c.label)
+# for c in cards.values():
+#     for target in c.required_for:
+#         g.add_edge(c.id, target)
 
-FIG_OPTIONS = {
-    "tight_layout": {
-        'rect': (0, 0, .9, 1)
-    },
-    "figsize": (12, 8)
-}
-fig, ax = plt.subplots(**FIG_OPTIONS)
-pos = networkx.planar_layout(g)
-networkx.draw_networkx(g, ax=ax, pos=pos)
-fig.show()
+# FIG_OPTIONS = {
+#     "tight_layout": {
+#         'rect': (0, 0, .9, 1)
+#     },
+#     "figsize": (12, 8)
+# }
+# fig, ax = plt.subplots(**FIG_OPTIONS)
+# pos = networkx.planar_layout(g)
+# networkx.draw_networkx(g, ax=ax, pos=pos)
+# fig.show()
 
 
 # nodes_attributes = tree.xpath("//node")

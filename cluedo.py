@@ -37,11 +37,17 @@ class Card(pydantic.BaseModel):
         else:
             description = ""
 
+        url_res = elt.xpath(""".//gml:data[@key="d2"]/text()""", namespaces=xmlns)
+        if url_res:
+            url = url_res[0]
+        else:
+            url = ""
         return Card(
             id=id,
             type=type,
             label=label,
-            description = description
+            description = description,
+            url=url,
         )
 
     def pretty_type(self) -> str:
@@ -52,11 +58,11 @@ class Card(pydantic.BaseModel):
             "proof": "preuve"
         }.get(self.type, self.type)
 
-
-
-    # def description_smart(self) -> str:
-    #     if self.type == "statement":
-    #         return self.pretty_type()
+    def description_smart(self) -> str:
+        if self.type in ("statement", "fingerprint"):
+            return self.pretty_type().upper()
+        else:
+            return self.label
 
 class Cluedo(pydantic.BaseModel):
     cards: tp.Dict[str, Card]
