@@ -10,8 +10,8 @@
         "n38"
       ],
       "required_for": [
-        "n2",
-        "n30"
+        "n30",
+        "n2"
       ]
     },
     "n1": {
@@ -63,8 +63,9 @@
         "n3"
       ],
       "required_for": [
-        "n8",
-        "n5"
+        "n5",
+        "n43",
+        "n8"
       ]
     },
     "n5": {
@@ -78,15 +79,14 @@
       ],
       "required_for": [
         "n6",
-        "n7",
-        "n40"
+        "n7"
       ]
     },
     "n6": {
       "id": "n6",
       "type": "evidence",
       "label": "Plateau de la collation pour le ministre",
-      "description": "Plateau qui servi la fl\u00fbte de champagne au Ministre Belge.",
+      "description": "Plateau qui servi la fl\u00fbte de champagne au Ministre Belge. Il semble ",
       "url": "Plateau",
       "depends_on": [
         "n5"
@@ -115,14 +115,14 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n4",
-        "n28"
+        "n28",
+        "n4"
       ],
       "required_for": [
-        "n34",
-        "n39",
         "n29",
-        "n55"
+        "n39",
+        "n55",
+        "n34"
       ]
     },
     "n9": {
@@ -172,11 +172,11 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n6",
-        "n11",
         "n14",
         "n29",
+        "n11",
         "n2",
+        "n6",
         "n7",
         "n33"
       ],
@@ -280,7 +280,7 @@
       "id": "n20",
       "type": "action",
       "label": "Ambassadeur Italien",
-      "description": "",
+      "description": "Refuse qu'on prenne ses empreintes. Mais si on lui demande une d\u00e9dicace, il devient plus sympathique :)",
       "url": "",
       "depends_on": [
         "n19"
@@ -309,8 +309,8 @@
       "description": "Ambassadeur Chinois :\n\"Mon taxi m'a d\u00e9pos\u00e9 \u00e0 19h, le trafic \u00e9tait \u00e9tonnement fluide.\"",
       "url": "Taxi",
       "depends_on": [
-        "n21",
-        "n22"
+        "n22",
+        "n21"
       ],
       "required_for": [
         "n23",
@@ -324,8 +324,8 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n2",
-        "n22"
+        "n22",
+        "n2"
       ],
       "required_for": [
         "n16"
@@ -381,7 +381,7 @@
       "id": "n28",
       "type": "evidence",
       "label": "T\u00e9l\u00e9phone du chef de la s\u00e9curit\u00e9",
-      "description": "",
+      "description": "Num\u00e9ro de t\u00e9l\u00e9phone du chef de la s\u00e9curit\u00e9. Contactez-le discr\u00e8tement !",
       "url": "Num\u00e9ro s\u00e9curit\u00e9",
       "depends_on": [
         "n18"
@@ -394,7 +394,7 @@
       "id": "n29",
       "type": "evidence",
       "label": "Adresse du laboratoire",
-      "description": "Laboratoire d'analyse m\u00e9dicale r\u00e9put\u00e9 pour sa fiabilit\u00e9 exemplaire. Tintin se chargera de transmettre vos \u00e9chantillons.",
+      "description": "Laboratoire d'analyse m\u00e9dicale r\u00e9put\u00e9 pour sa fiabilit\u00e9 exemplaire. Tintin se chargera de transmettre vos \u00e9chantillons. Mais attention, il est tr\u00e8s demand\u00e9, ne demandez pas n'importe quoi !",
       "url": "Adresse Labo",
       "depends_on": [
         "n8"
@@ -414,8 +414,8 @@
         "n0"
       ],
       "required_for": [
-        "n51",
-        "n10"
+        "n10",
+        "n51"
       ]
     },
     "n31": {
@@ -441,6 +441,7 @@
         "n31"
       ],
       "required_for": [
+        "n58",
         "n33"
       ]
     },
@@ -491,6 +492,7 @@
         "n35"
       ],
       "required_for": [
+        "n59",
         "n37"
       ]
     },
@@ -515,13 +517,13 @@
         "n1"
       ],
       "required_for": [
-        "n3",
-        "n9",
         "n21",
-        "n41",
-        "n18",
         "n0",
-        "n25"
+        "n41",
+        "n25",
+        "n9",
+        "n3",
+        "n18"
       ]
     },
     "n39": {
@@ -534,17 +536,18 @@
         "n8"
       ],
       "required_for": [
-        "n43"
+        "n43",
+        "n57"
       ]
     },
     "n40": {
       "id": "n40",
       "type": "statement",
       "label": "Friteuse d\u00e9fectueuse ?",
-      "description": "Chef cuisinier: \n\" Une prestation culinaire de qualit\u00e9, ce d\u00eener ! On a eu un peu peur lorsque la friteuse a pris feu ! Je n'aurais pas du autoriser le nouveau \u00e0 \u00eatre dessus.\"",
+      "description": "Chef cuisinier: \n\" Un accident ? Attendez, c'\u00e9tait une prestation culinaire de qualit\u00e9, ce d\u00eener ! Oui, on a eu un peu peur lorsque la friteuse a pris feu, mais c'\u00e9tait vite r\u00e9gl\u00e9. Je n'aurais pas du autoriser le nouveau \u00e0 \u00eatre dessus.\"",
       "url": "",
       "depends_on": [
-        "n5"
+        "n57"
       ],
       "required_for": [
         "n51"
@@ -583,7 +586,8 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n39"
+        "n39",
+        "n4"
       ],
       "required_for": [
         "n44"
@@ -593,7 +597,7 @@
       "id": "n44",
       "type": "statement",
       "label": "Ambassadeur bourr\u00e9 chante",
-      "description": "Chef cuisinier: \n\"En effet, nous avons \u00e9t\u00e9 d\u00e9rang\u00e9 par un Ambassadeur un peu pompette. On a d\u00fb se mettre \u00e0 trois pour le convaincre de chanter ailleurs ! \"",
+      "description": "Chef cuisinier: \n\"En effet, nous avons \u00e9t\u00e9 d\u00e9rang\u00e9 par un Ambassadeur un peu pompette qui chantait tr\u00e8s fort en anglais. On a d\u00fb se mettre \u00e0 trois pour le convaincre de chanter ailleurs ! \"",
       "url": "",
       "depends_on": [
         "n43"
@@ -626,8 +630,8 @@
         "n45"
       ],
       "required_for": [
-        "n47",
-        "n49"
+        "n49",
+        "n47"
       ]
     },
     "n47": {
@@ -647,7 +651,7 @@
       "id": "n48",
       "type": "statement",
       "label": "Connais pas",
-      "description": "Ambassadeur Italien:\n\"Mmh, jamais entendu parler! EN tout cas, c'est s\u00fbr que  \u00e7a ne vaut pas le football. Maintenant du balai, j'ai du travail !\"",
+      "description": "Ambassadeur Italien:\n\"Mmh, jamais entendu parler! En tout cas, c'est s\u00fbr que  \u00e7a ne vaut pas le football. Maintenant du balai, j'ai du travail !\"",
       "url": "",
       "depends_on": [
         "n47"
@@ -685,8 +689,8 @@
       "description": "",
       "url": "",
       "depends_on": [
-        "n30",
-        "n40"
+        "n40",
+        "n30"
       ],
       "required_for": [
         "n54",
@@ -697,7 +701,7 @@
       "id": "n52",
       "type": "statement",
       "label": "Serveur: friteuse",
-      "description": "Serveur:\n\"Juste avant 20h, en allant chercher les plateaux, les cuisiniers \u00e9taient agit\u00e9s et il y avait une odeur de br\u00fbl\u00e9. J'ai demand\u00e9 \u00e0 un homme qui passait la ce qu'il se passait, mais il est parti de la zone de desserte sans me r\u00e9pondre.\"",
+      "description": "Serveur:\n\"Juste avant 20h, en allant chercher les plateaux, les cuisiniers \u00e9taient agit\u00e9s et il y avait une odeur de br\u00fbl\u00e9. J'ai demand\u00e9 \u00e0 un homme qui \u00e9tait l\u00e0 ce qu'il se passait, mais il est parti rapidement de la zone de desserte sans me r\u00e9pondre. C'\u00e9tait assez louche.\"",
       "url": "",
       "depends_on": [
         "n51"
@@ -735,7 +739,7 @@
       "id": "n55",
       "type": "statement",
       "label": "Mort du ministre",
-      "description": "Chef de la s\u00e9curit\u00e9:\n\"J'ai appris l'\u00e9tat du Ministre vers 21h15. Nous l'avons imm\u00e9diatement \u00e9vacu\u00e9 par h\u00e9licopt\u00e8re. H\u00e9las, son d\u00e9c\u00e8s a \u00e9t\u00e9 confirm\u00e9 \u00e0 22h30.\"",
+      "description": "CR du chef de la s\u00e9curit\u00e9:\n\"J'ai appris l'\u00e9tat du Ministre vers 21h15. Nous l'avons imm\u00e9diatement \u00e9vacu\u00e9 par h\u00e9licopt\u00e8re. H\u00e9las, son d\u00e9c\u00e8s a \u00e9t\u00e9 confirm\u00e9 \u00e0 22h30.\"",
       "url": "",
       "depends_on": [
         "n8"
@@ -750,6 +754,41 @@
       "url": "Rapport analyse",
       "depends_on": [
         "n53"
+      ],
+      "required_for": []
+    },
+    "n57": {
+      "id": "n57",
+      "type": "action",
+      "label": "Chef cuisinier",
+      "description": "",
+      "url": "",
+      "depends_on": [
+        "n39"
+      ],
+      "required_for": [
+        "n40"
+      ]
+    },
+    "n58": {
+      "id": "n58",
+      "type": "statement",
+      "label": "Timing",
+      "description": "Ambassadeur N\u00e9o-z\u00e9landais:\n\"Une fois le discours termin\u00e9, j'ai repris le plateau \u00e0 c\u00f4t\u00e9 du pupitre de l'ambassadeur et j'ai distribu\u00e9 le reste des coupes. Le serveur \u00e9tait occup\u00e9 et on avait soif! Il doit donc y avoir mes empreintes dessus, j'image.\"",
+      "url": "",
+      "depends_on": [
+        "n32"
+      ],
+      "required_for": []
+    },
+    "n59": {
+      "id": "n59",
+      "type": "statement",
+      "label": "Un complice ?",
+      "description": "Ambassadeur Chinois:\n\"Tiens, une derni\u00e8re chose bien \u00e9trange: j'ai appris qu'un individu connu de nos services de police  s'est fait arr\u00eater mercredi \u00e0 Beijing. On a trouv\u00e9 sur lui de l'argent liquide, un badge de cuisinier pour le soir du gala...et un mode d'emploi de friteuse... Invraisemblable\"",
+      "url": "",
+      "depends_on": [
+        "n36"
       ],
       "required_for": []
     }

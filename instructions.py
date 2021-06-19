@@ -8,7 +8,8 @@ action_cards = sorted(action_cards, key=lambda c: c.label)
 
 def short_description(c: Card):
     short_desc = textwrap.shorten(c.description, 50)
-    return f"{c.id} ({c.pretty_type()}: {short_desc})"
+    short_label = textwrap.shorten(c.description, 50)
+    return f"{c.id} {c.pretty_type()}: {short_desc}"
 
 for c in action_cards:
     print("__________________")
@@ -22,3 +23,5 @@ for c in action_cards:
         print("Donner:")
         for id in c.required_for:
             print("-", short_description(clu.cards[id]))
+    if c.description:
+        print("Autres infos:", c.description)

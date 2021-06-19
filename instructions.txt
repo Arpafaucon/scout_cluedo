@@ -2,21 +2,21 @@ __________________
 ID:  n12
 Label:  (Tintin) Laboratoire analyse
 Prérequis:
-- n14 (indice: Une photo dédicacée de l'Ambassadeur [...])
-- n6 (indice: Plateau qui servi la flûte de champagne au [...])
-- n11 (empreinte: Empreinte digitale du serveur)
-- n2 (indice: Invitation pour la soirée gala du 13 juin [...])
 - n29 (indice: Laboratoire d'analyse médicale réputé pour [...])
+- n14 (indice: Une photo dédicacée de l'Ambassadeur [...])
+- n11 (empreinte: Empreinte digitale du serveur)
+- n6 (indice: Plateau qui servi la flûte de champagne au [...])
 - n7 (empreinte: Empreinte digitale du cuisinier.)
 - n33 (empreinte: Empreinte digitale de l'Ambassadeur de [...])
+- n2 (indice: Invitation pour la soirée gala du 13 juin [...])
 Donner:
 - n13 (indice: Rapport d'analyse, présence de trois [...])
 __________________
 ID:  n53
 Label:  (Tintin) Laboratoire d'analyse
 Prérequis:
-- n54 (indice: Trouvé sur la table de desserte par le [...])
 - n29 (indice: Laboratoire d'analyse médicale réputé pour [...])
+- n54 (indice: Trouvé sur la table de desserte par le [...])
 Donner:
 - n56 (indice: Forte concentration de: - Chlorure de Sodium [...])
 __________________
@@ -40,9 +40,9 @@ Label:  Ambassadeur Brésil
 Prérequis:
 - n38 (indice: Autorisation de mener l'enquête relative à [...])
 Donner:
-- n35 (déclaration: Ambassadeur Brésilien : « J'avais beaucoup [...])
-- n19 (déclaration: Ambassadeur Brésilien : "L'ambassadeur [...])
 - n28 (indice: )
+- n19 (déclaration: Ambassadeur Brésilien : "L'ambassadeur [...])
+- n35 (déclaration: Ambassadeur Brésilien : « J'avais beaucoup [...])
 __________________
 ID:  n41
 Label:  Ambassadeur Canada
@@ -54,8 +54,8 @@ __________________
 ID:  n45
 Label:  Ambassadeur Canada
 Prérequis:
-- n44 (déclaration: Chef cuisinier: "En effet, nous avons été [...])
 - n42 (déclaration: Ambassadeur Canadien: "Sacrée soirée, calice [...])
+- n44 (déclaration: Chef cuisinier: "En effet, nous avons été [...])
 Donner:
 - n46 (déclaration: Ambassadeur Canadien: "AAAAAAh... c'était [...])
 __________________
@@ -80,6 +80,7 @@ Prérequis:
 - n35 (déclaration: Ambassadeur Brésilien : « J'avais beaucoup [...])
 Donner:
 - n37 (indice: Photo dédicacée par Jacky Chan pour [...])
+- n59 (déclaration: Ambassadeur Chinois: "Tiens, une dernière [...])
 __________________
 ID:  n9
 Label:  Ambassadeur Italien
@@ -102,6 +103,7 @@ Prérequis:
 - n19 (déclaration: Ambassadeur Brésilien : "L'ambassadeur [...])
 Donner:
 - n14 (indice: Une photo dédicacée de l'Ambassadeur [...])
+Autres infos: Refuse qu'on prenne ses empreintes. Mais si on lui demande une dédicace, il devient plus sympathique :)
 __________________
 ID:  n47
 Label:  Ambassadeur Italien
@@ -123,60 +125,70 @@ Prérequis:
 - n31 (déclaration: Serveur : " L'ambassadeur Néozélandais était [...])
 Donner:
 - n33 (empreinte: Empreinte digitale de l'Ambassadeur de [...])
+- n58 (déclaration: Ambassadeur Néo-zélandais: "Une fois le [...])
 __________________
 ID:  n5
 Label:  Chef cuisinier
 Prérequis:
 - n4 (indice: « A qui de droit: Par la présente, je vous [...])
 Donner:
-- n40 (déclaration: Chef cuisinier: " Une prestation culinaire [...])
 - n6 (indice: Plateau qui servi la flûte de champagne au [...])
 - n7 (empreinte: Empreinte digitale du cuisinier.)
 __________________
 ID:  n43
 Label:  Chef cuisinier
 Prérequis:
+- n4 (indice: « A qui de droit: Par la présente, je vous [...])
 - n39 (déclaration: Chef de la sécurité: "Seulement deux [...])
 Donner:
 - n44 (déclaration: Chef cuisinier: "En effet, nous avons été [...])
 __________________
+ID:  n57
+Label:  Chef cuisinier
+Prérequis:
+- n39 (déclaration: Chef de la sécurité: "Seulement deux [...])
+Donner:
+- n40 (déclaration: Chef cuisinier: " Un accident ? Attendez, [...])
+__________________
 ID:  n8
 Label:  Chef de la sécurité
 Prérequis:
-- n28 (indice: )
 - n4 (indice: « A qui de droit: Par la présente, je vous [...])
+- n28 (indice: )
 Donner:
-- n29 (indice: Laboratoire d'analyse médicale réputé pour [...])
-- n55 (déclaration: Chef de la sécurité: "J'ai appris l'état du [...])
-- n39 (déclaration: Chef de la sécurité: "Seulement deux [...])
 - n34 (indice: Enregistrement vidéo : on voit clairement [...])
+- n29 (indice: Laboratoire d'analyse médicale réputé pour [...])
+- n39 (déclaration: Chef de la sécurité: "Seulement deux [...])
+- n55 (déclaration: CR du chef de la sécurité: "J'ai appris [...])
 __________________
 ID:  n3
 Label:  Secrétaire
 Prérequis:
 - n38 (indice: Autorisation de mener l'enquête relative à [...])
 Donner:
-- n27 (déclaration: Secrétaire du ministre : " Vers 20h40, le [...])
 - n4 (indice: « A qui de droit: Par la présente, je vous [...])
+- n27 (déclaration: Secrétaire du ministre : " Vers 20h40, le [...])
 __________________
 ID:  n10
 Label:  Serveur
 Prérequis:
 - n30 (déclaration: Ambassadeur Sud-Africain : "Le serveur ? Des [...])
 Donner:
-- n31 (déclaration: Serveur : " L'ambassadeur Néozélandais était [...])
 - n11 (empreinte: Empreinte digitale du serveur)
+- n31 (déclaration: Serveur : " L'ambassadeur Néozélandais était [...])
 __________________
 ID:  n51
 Label:  Serveur
 Prérequis:
 - n30 (déclaration: Ambassadeur Sud-Africain : "Le serveur ? Des [...])
-- n40 (déclaration: Chef cuisinier: " Une prestation culinaire [...])
+- n40 (déclaration: Chef cuisinier: " Un accident ? Attendez, [...])
 Donner:
-- n54 (indice: Trouvé sur la table de desserte par le [...])
 - n52 (déclaration: Serveur: "Juste avant 20h, en allant [...])
+- n54 (indice: Trouvé sur la table de desserte par le [...])
 __________________
 ID:  n1
 Label:  Tintin
 Donner:
 - n38 (indice: Autorisation de mener l'enquête relative à [...])
+Autres infos: ACTION
+Salle de reception

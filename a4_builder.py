@@ -21,6 +21,9 @@ accessible_wm = accesible_wh_mm * MM_TO_PX
 
 
 OUT_PAGES = Path("output_pages")
+if OUT_PAGES.exists():
+    import shutil
+    shutil.rmtree(OUT_PAGES)
 OUT_PAGES.mkdir(exist_ok=True)
 
 blit_locations = []
@@ -30,8 +33,11 @@ for ix in range(3):
         xy = xy_mm * MM_TO_PX
         blit_locations.append(xy)
 
+num_cards = len(files)
+num_pages = int(np.ceil(num_cards//9))
 
-for page_ix in range(len(files)//9+1):
+
+for page_ix in range(num_pages):
     page = PIL.Image.new("RGBA", A4.tuple_int(), color="white")
     imgs_to_paste = files[9*page_ix: 9*page_ix+9]
     for i, img in enumerate(imgs_to_paste):
