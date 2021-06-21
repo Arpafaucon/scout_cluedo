@@ -1,10 +1,9 @@
 from pathlib import Path
-from PIL.Image import Image
 from pathlib import Path
 import PIL.Image, PIL.ImageDraw, PIL.ImageFont, PIL.ImageShow
 from size import Size
 import numpy as np
-from image_builder import HEIGHT_MM, LOGGER, WIDTH_MM, DPI, MM_TO_PX
+from image_builder import HEIGHT_MM, LOGGER, WIDTH_MM, MM_TO_PX
 
 
 source = Path("output")

@@ -2,7 +2,7 @@
 
 - Quand: 16h30-18h
 - Où: Espace dégagé sur le parc de sceau. Les personnages déambulent sans se cacher.
-- Référents: Grégoire et Raphaël
+- Référents: --- et ---
 - Les jeunes sont en 6 équipes
 
 ## Imaginaire
@@ -33,14 +33,14 @@ A la fin du temps imparti, les équipes ont 10 minutes pour faire le point sur l
 
 ## Personnages
 
-- Tintin (Grégoire), lance l'enquête
+- Tintin (---), lance l'enquête
 - 6 ambassadeurs
-- le Serveur (Vincent), incognito au début
-- le Chef de la Sécurité (Raphaël, on découvre qui c'est en l'appelant)
+- le Serveur (---), incognito au début
+- le Chef de la Sécurité (---, on découvre qui c'est en l'appelant)
 - le Chef cuisinier
 
 ## Matériel
-- graphe de l'enquete complète, en 2 exemplaires (Grégore et Raphaël)
+- graphe de l'enquete complète, en 2 exemplaires (--- et ---)
 - cartes "indices", 36 cartes par équipe
 - aide-mémoire pour les personnages (1 feuille, à découper)
 - déguisements des protagonistes

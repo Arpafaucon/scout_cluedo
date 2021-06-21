@@ -1,5 +1,4 @@
 from cluedo import Cluedo, Card
-from pathlib import Path
 import textwrap
 
 clu = Cluedo.parse_file("cluedo.json")

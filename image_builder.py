@@ -7,11 +7,6 @@ from pathlib import Path
 import PIL.Image, PIL.ImageDraw, PIL.ImageFont, PIL.ImageShow
 import textwrap
 
-import typing_extensions as tp_ext
-import typing as tp
-from dataclasses import dataclass
-import numpy as np
-
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -122,9 +117,6 @@ def format_description(d:str):
     return "\n".join(wrapped_lines)
 
 def build_card(card: Card) -> Image:
-    # main_image = PIL.Image.new(
-    #     "RGBA", IMG_SIZE_PX.tuple_int(), color="yellow"
-    # )
     main_image = PIL.Image.open("template.png")
     draw: PIL.ImageDraw.ImageDraw = PIL.ImageDraw.Draw(main_image)
     LOGGER.info("loaded main image, size=%s", main_image.size)
